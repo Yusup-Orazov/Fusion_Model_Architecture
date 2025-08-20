@@ -1,0 +1,660 @@
+Some weights of SegformerForSemanticSegmentation were not initialized from the model checkpoint at nvidia/segformer-b0-finetuned-ade-512-512 and are newly initialized because the shapes did not match:
+- decode_head.classifier.weight: found shape torch.Size([150, 256, 1, 1]) in the checkpoint and torch.Size([3, 256, 1, 1]) in the model instantiated
+- decode_head.classifier.bias: found shape torch.Size([150]) in the checkpoint and torch.Size([3]) in the model instantiated
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/work/archcomplab/yorazov2/Swin3DEnv/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:143: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+/work/archcomplab/yorazov2/Swin3DEnv/lib/python3.9/site-packages/torch/nn/modules/conv.py:456: UserWarning: Applied workaround for CuDNN issue, install nvrtc.so (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:80.)
+  return F.conv2d(input, weight, bias, self.stride,
+[001/100] train_loss=1.122 train_acc=0.426 | val_loss=1.120 val_acc=0.466 | head_lr=2.60e-05
+    IoU  [0.466, 0.088, 0.030]
+    F1   [0.636, 0.161, 0.058]
+    Rcl  [0.499, 0.243, 0.340]
+    Prc  [0.876, 0.121, 0.032]
+    AccC [0.499, 0.243, 0.340]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[002/100] train_loss=1.109 train_acc=0.416 | val_loss=1.102 val_acc=0.457 | head_lr=5.09e-05
+    IoU  [0.455, 0.096, 0.029]
+    F1   [0.625, 0.175, 0.057]
+    Rcl  [0.483, 0.293, 0.315]
+    Prc  [0.884, 0.125, 0.031]
+    AccC [0.483, 0.293, 0.315]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[003/100] train_loss=1.086 train_acc=0.448 | val_loss=1.082 val_acc=0.528 | head_lr=7.58e-05
+    IoU  [0.530, 0.107, 0.033]
+    F1   [0.693, 0.193, 0.064]
+    Rcl  [0.566, 0.290, 0.308]
+    Prc  [0.894, 0.144, 0.036]
+    AccC [0.566, 0.290, 0.308]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[004/100] train_loss=1.064 train_acc=0.498 | val_loss=1.060 val_acc=0.576 | head_lr=1.01e-04
+    IoU  [0.580, 0.119, 0.046]
+    F1   [0.734, 0.212, 0.088]
+    Rcl  [0.617, 0.323, 0.349]
+    Prc  [0.906, 0.158, 0.050]
+    AccC [0.617, 0.323, 0.349]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[005/100] train_loss=1.042 train_acc=0.507 | val_loss=1.038 val_acc=0.596 | head_lr=1.26e-04
+    IoU  [0.599, 0.135, 0.050]
+    F1   [0.749, 0.238, 0.096]
+    Rcl  [0.635, 0.345, 0.388]
+    Prc  [0.914, 0.182, 0.055]
+    AccC [0.635, 0.345, 0.388]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[006/100] train_loss=1.011 train_acc=0.541 | val_loss=1.015 val_acc=0.624 | head_lr=1.51e-04
+    IoU  [0.630, 0.142, 0.054]
+    F1   [0.773, 0.249, 0.102]
+    Rcl  [0.669, 0.333, 0.405]
+    Prc  [0.916, 0.199, 0.058]
+    AccC [0.669, 0.333, 0.405]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[007/100] train_loss=0.989 train_acc=0.613 | val_loss=0.993 val_acc=0.650 | head_lr=1.76e-04
+    IoU  [0.654, 0.141, 0.074]
+    F1   [0.791, 0.247, 0.137]
+    Rcl  [0.694, 0.377, 0.379]
+    Prc  [0.920, 0.184, 0.084]
+    AccC [0.694, 0.377, 0.379]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[008/100] train_loss=0.965 train_acc=0.571 | val_loss=0.963 val_acc=0.612 | head_lr=2.01e-04
+    IoU  [0.615, 0.163, 0.061]
+    F1   [0.761, 0.281, 0.116]
+    Rcl  [0.642, 0.415, 0.470]
+    Prc  [0.936, 0.212, 0.066]
+    AccC [0.642, 0.415, 0.470]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[009/100] train_loss=0.930 train_acc=0.616 | val_loss=0.942 val_acc=0.657 | head_lr=2.26e-04
+    IoU  [0.662, 0.157, 0.083]
+    F1   [0.796, 0.272, 0.153]
+    Rcl  [0.696, 0.414, 0.437]
+    Prc  [0.930, 0.202, 0.093]
+    AccC [0.696, 0.414, 0.437]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[010/100] train_loss=0.905 train_acc=0.646 | val_loss=0.930 val_acc=0.649 | head_lr=2.51e-04
+    IoU  [0.648, 0.163, 0.090]
+    F1   [0.786, 0.281, 0.165]
+    Rcl  [0.679, 0.476, 0.408]
+    Prc  [0.935, 0.199, 0.104]
+    AccC [0.679, 0.476, 0.408]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[011/100] train_loss=0.893 train_acc=0.645 | val_loss=0.908 val_acc=0.647 | head_lr=2.75e-04
+    IoU  [0.649, 0.176, 0.077]
+    F1   [0.787, 0.299, 0.143]
+    Rcl  [0.678, 0.448, 0.483]
+    Prc  [0.938, 0.225, 0.084]
+    AccC [0.678, 0.448, 0.483]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[012/100] train_loss=0.872 train_acc=0.642 | val_loss=0.894 val_acc=0.643 | head_lr=3.00e-04
+    IoU  [0.643, 0.179, 0.082]
+    F1   [0.783, 0.304, 0.152]
+    Rcl  [0.669, 0.486, 0.480]
+    Prc  [0.943, 0.221, 0.090]
+    AccC [0.669, 0.486, 0.480]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[013/100] train_loss=0.857 train_acc=0.635 | val_loss=0.880 val_acc=0.652 | head_lr=3.25e-04
+    IoU  [0.653, 0.182, 0.084]
+    F1   [0.790, 0.307, 0.156]
+    Rcl  [0.680, 0.467, 0.515]
+    Prc  [0.942, 0.229, 0.092]
+    AccC [0.680, 0.467, 0.515]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[014/100] train_loss=0.851 train_acc=0.640 | val_loss=0.873 val_acc=0.669 | head_lr=3.50e-04
+    IoU  [0.672, 0.174, 0.098]
+    F1   [0.804, 0.296, 0.178]
+    Rcl  [0.702, 0.455, 0.503]
+    Prc  [0.940, 0.219, 0.108]
+    AccC [0.702, 0.455, 0.503]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[015/100] train_loss=0.838 train_acc=0.660 | val_loss=0.862 val_acc=0.665 | head_lr=3.75e-04
+    IoU  [0.663, 0.195, 0.093]
+    F1   [0.797, 0.327, 0.170]
+    Rcl  [0.688, 0.527, 0.478]
+    Prc  [0.947, 0.237, 0.103]
+    AccC [0.688, 0.527, 0.478]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[016/100] train_loss=0.839 train_acc=0.676 | val_loss=0.859 val_acc=0.649 | head_lr=4.00e-04
+    IoU  [0.648, 0.190, 0.088]
+    F1   [0.786, 0.319, 0.162]
+    Rcl  [0.671, 0.517, 0.511]
+    Prc  [0.951, 0.231, 0.096]
+    AccC [0.671, 0.517, 0.511]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[017/100] train_loss=0.832 train_acc=0.660 | val_loss=0.846 val_acc=0.661 | head_lr=4.25e-04
+    IoU  [0.660, 0.194, 0.095]
+    F1   [0.795, 0.325, 0.174]
+    Rcl  [0.683, 0.524, 0.516]
+    Prc  [0.952, 0.236, 0.104]
+    AccC [0.683, 0.524, 0.516]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[018/100] train_loss=0.820 train_acc=0.682 | val_loss=0.847 val_acc=0.665 | head_lr=4.50e-04
+    IoU  [0.665, 0.195, 0.096]
+    F1   [0.799, 0.327, 0.174]
+    Rcl  [0.688, 0.526, 0.506]
+    Prc  [0.952, 0.237, 0.105]
+    AccC [0.688, 0.526, 0.506]
+[019/100] train_loss=0.814 train_acc=0.647 | val_loss=0.834 val_acc=0.666 | head_lr=4.75e-04
+    IoU  [0.662, 0.193, 0.115]
+    F1   [0.797, 0.324, 0.206]
+    Rcl  [0.685, 0.567, 0.490]
+    Prc  [0.953, 0.227, 0.131]
+    AccC [0.685, 0.567, 0.490]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[020/100] train_loss=0.807 train_acc=0.677 | val_loss=0.829 val_acc=0.692 | head_lr=5.00e-04
+    IoU  [0.691, 0.211, 0.108]
+    F1   [0.817, 0.349, 0.194]
+    Rcl  [0.716, 0.551, 0.492]
+    Prc  [0.951, 0.255, 0.121]
+    AccC [0.716, 0.551, 0.492]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+→ Unfroze last backbone stage at epoch 21
+[021/100] train_loss=0.802 train_acc=0.694 | val_loss=0.836 val_acc=0.706 | head_lr=5.00e-04 | enc_lr=5.95e-06
+    IoU  [0.707, 0.213, 0.107]
+    F1   [0.828, 0.352, 0.193]
+    Rcl  [0.736, 0.529, 0.469]
+    Prc  [0.946, 0.263, 0.121]
+    AccC [0.736, 0.529, 0.469]
+[022/100] train_loss=0.798 train_acc=0.693 | val_loss=0.817 val_acc=0.660 | head_lr=5.00e-04 | enc_lr=1.09e-05
+    IoU  [0.655, 0.205, 0.104]
+    F1   [0.791, 0.341, 0.188]
+    Rcl  [0.674, 0.589, 0.507]
+    Prc  [0.957, 0.240, 0.116]
+    AccC [0.674, 0.589, 0.507]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[023/100] train_loss=0.790 train_acc=0.668 | val_loss=0.819 val_acc=0.697 | head_lr=5.00e-04 | enc_lr=1.58e-05
+    IoU  [0.693, 0.209, 0.141]
+    F1   [0.818, 0.346, 0.248]
+    Rcl  [0.717, 0.607, 0.452]
+    Prc  [0.954, 0.242, 0.170]
+    AccC [0.717, 0.607, 0.452]
+[024/100] train_loss=0.788 train_acc=0.700 | val_loss=0.812 val_acc=0.712 | head_lr=5.00e-04 | enc_lr=2.08e-05
+    IoU  [0.713, 0.230, 0.107]
+    F1   [0.832, 0.374, 0.193]
+    Rcl  [0.740, 0.547, 0.506]
+    Prc  [0.950, 0.284, 0.119]
+    AccC [0.740, 0.547, 0.506]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[025/100] train_loss=0.772 train_acc=0.678 | val_loss=0.810 val_acc=0.723 | head_lr=5.00e-04 | enc_lr=2.58e-05
+    IoU  [0.730, 0.222, 0.107]
+    F1   [0.844, 0.363, 0.193]
+    Rcl  [0.762, 0.467, 0.567]
+    Prc  [0.946, 0.297, 0.116]
+    AccC [0.762, 0.467, 0.567]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[026/100] train_loss=0.775 train_acc=0.693 | val_loss=0.804 val_acc=0.704 | head_lr=5.00e-04 | enc_lr=3.07e-05
+    IoU  [0.705, 0.239, 0.096]
+    F1   [0.827, 0.386, 0.176]
+    Rcl  [0.730, 0.546, 0.530]
+    Prc  [0.952, 0.298, 0.106]
+    AccC [0.730, 0.546, 0.530]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[027/100] train_loss=0.775 train_acc=0.701 | val_loss=0.798 val_acc=0.686 | head_lr=5.00e-04 | enc_lr=3.56e-05
+    IoU  [0.685, 0.218, 0.105]
+    F1   [0.813, 0.358, 0.190]
+    Rcl  [0.707, 0.556, 0.549]
+    Prc  [0.957, 0.265, 0.115]
+    AccC [0.707, 0.556, 0.549]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[028/100] train_loss=0.771 train_acc=0.679 | val_loss=0.801 val_acc=0.740 | head_lr=5.00e-04 | enc_lr=4.06e-05
+    IoU  [0.743, 0.225, 0.139]
+    F1   [0.852, 0.368, 0.244]
+    Rcl  [0.774, 0.531, 0.508]
+    Prc  [0.948, 0.281, 0.161]
+    AccC [0.774, 0.531, 0.508]
+[029/100] train_loss=0.766 train_acc=0.722 | val_loss=0.801 val_acc=0.691 | head_lr=5.00e-04 | enc_lr=4.56e-05
+    IoU  [0.691, 0.238, 0.094]
+    F1   [0.817, 0.384, 0.172]
+    Rcl  [0.713, 0.562, 0.548]
+    Prc  [0.958, 0.292, 0.102]
+    AccC [0.713, 0.562, 0.548]
+[030/100] train_loss=0.762 train_acc=0.692 | val_loss=0.787 val_acc=0.717 | head_lr=5.00e-04 | enc_lr=5.05e-05
+    IoU  [0.721, 0.238, 0.105]
+    F1   [0.838, 0.385, 0.190]
+    Rcl  [0.748, 0.514, 0.581]
+    Prc  [0.953, 0.308, 0.113]
+    AccC [0.748, 0.514, 0.581]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[031/100] train_loss=0.764 train_acc=0.704 | val_loss=0.792 val_acc=0.706 | head_lr=5.00e-04 | enc_lr=5.54e-05
+    IoU  [0.709, 0.256, 0.090]
+    F1   [0.830, 0.407, 0.165]
+    Rcl  [0.733, 0.532, 0.577]
+    Prc  [0.956, 0.330, 0.096]
+    AccC [0.733, 0.532, 0.577]
+[032/100] train_loss=0.761 train_acc=0.698 | val_loss=0.790 val_acc=0.697 | head_lr=5.00e-04 | enc_lr=6.04e-05
+    IoU  [0.697, 0.216, 0.123]
+    F1   [0.822, 0.356, 0.219]
+    Rcl  [0.718, 0.577, 0.534]
+    Prc  [0.960, 0.257, 0.138]
+    AccC [0.718, 0.577, 0.534]
+[033/100] train_loss=0.755 train_acc=0.701 | val_loss=0.781 val_acc=0.692 | head_lr=5.00e-04 | enc_lr=6.54e-05
+    IoU  [0.688, 0.229, 0.116]
+    F1   [0.815, 0.373, 0.207]
+    Rcl  [0.707, 0.609, 0.539]
+    Prc  [0.962, 0.269, 0.128]
+    AccC [0.707, 0.609, 0.539]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[034/100] train_loss=0.756 train_acc=0.713 | val_loss=0.786 val_acc=0.702 | head_lr=5.00e-04 | enc_lr=7.03e-05
+    IoU  [0.697, 0.235, 0.119]
+    F1   [0.822, 0.381, 0.213]
+    Rcl  [0.718, 0.629, 0.496]
+    Prc  [0.961, 0.273, 0.136]
+    AccC [0.718, 0.629, 0.496]
+[035/100] train_loss=0.754 train_acc=0.712 | val_loss=0.790 val_acc=0.721 | head_lr=5.00e-04 | enc_lr=7.52e-05
+    IoU  [0.722, 0.234, 0.116]
+    F1   [0.839, 0.379, 0.209]
+    Rcl  [0.750, 0.550, 0.528]
+    Prc  [0.951, 0.290, 0.130]
+    AccC [0.750, 0.550, 0.528]
+[036/100] train_loss=0.738 train_acc=0.703 | val_loss=0.780 val_acc=0.699 | head_lr=5.00e-04 | enc_lr=8.02e-05
+    IoU  [0.701, 0.214, 0.119]
+    F1   [0.824, 0.353, 0.213]
+    Rcl  [0.723, 0.540, 0.578]
+    Prc  [0.957, 0.262, 0.130]
+    AccC [0.723, 0.540, 0.578]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[037/100] train_loss=0.743 train_acc=0.734 | val_loss=0.782 val_acc=0.707 | head_lr=5.00e-04 | enc_lr=8.51e-05
+    IoU  [0.704, 0.220, 0.149]
+    F1   [0.827, 0.361, 0.259]
+    Rcl  [0.726, 0.614, 0.510]
+    Prc  [0.960, 0.256, 0.174]
+    AccC [0.726, 0.614, 0.510]
+[038/100] train_loss=0.747 train_acc=0.701 | val_loss=0.778 val_acc=0.706 | head_lr=5.00e-04 | enc_lr=9.01e-05
+    IoU  [0.704, 0.230, 0.123]
+    F1   [0.826, 0.374, 0.220]
+    Rcl  [0.726, 0.598, 0.522]
+    Prc  [0.958, 0.272, 0.139]
+    AccC [0.726, 0.598, 0.522]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[039/100] train_loss=0.737 train_acc=0.724 | val_loss=0.778 val_acc=0.746 | head_lr=5.00e-04 | enc_lr=9.51e-05
+    IoU  [0.750, 0.256, 0.116]
+    F1   [0.857, 0.408, 0.208]
+    Rcl  [0.780, 0.540, 0.531]
+    Prc  [0.952, 0.327, 0.129]
+    AccC [0.780, 0.540, 0.531]
+[040/100] train_loss=0.731 train_acc=0.711 | val_loss=0.766 val_acc=0.685 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.684, 0.241, 0.095]
+    F1   [0.812, 0.388, 0.174]
+    Rcl  [0.702, 0.573, 0.587]
+    Prc  [0.963, 0.294, 0.102]
+    AccC [0.702, 0.573, 0.587]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[041/100] train_loss=0.732 train_acc=0.716 | val_loss=0.771 val_acc=0.703 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.702, 0.223, 0.127]
+    F1   [0.825, 0.365, 0.225]
+    Rcl  [0.723, 0.586, 0.549]
+    Prc  [0.960, 0.265, 0.142]
+    AccC [0.723, 0.586, 0.549]
+[042/100] train_loss=0.728 train_acc=0.709 | val_loss=0.766 val_acc=0.728 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.730, 0.233, 0.137]
+    F1   [0.844, 0.377, 0.241]
+    Rcl  [0.755, 0.568, 0.544]
+    Prc  [0.956, 0.283, 0.155]
+    AccC [0.755, 0.568, 0.544]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[043/100] train_loss=0.735 train_acc=0.712 | val_loss=0.760 val_acc=0.702 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.702, 0.249, 0.101]
+    F1   [0.825, 0.398, 0.184]
+    Rcl  [0.722, 0.577, 0.578]
+    Prc  [0.962, 0.304, 0.109]
+    AccC [0.722, 0.577, 0.578]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[044/100] train_loss=0.735 train_acc=0.723 | val_loss=0.771 val_acc=0.733 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.738, 0.251, 0.109]
+    F1   [0.849, 0.402, 0.196]
+    Rcl  [0.765, 0.526, 0.567]
+    Prc  [0.954, 0.325, 0.119]
+    AccC [0.765, 0.526, 0.567]
+[045/100] train_loss=0.736 train_acc=0.727 | val_loss=0.760 val_acc=0.720 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.722, 0.231, 0.134]
+    F1   [0.838, 0.375, 0.236]
+    Rcl  [0.744, 0.578, 0.552]
+    Prc  [0.960, 0.277, 0.150]
+    AccC [0.744, 0.578, 0.552]
+[046/100] train_loss=0.732 train_acc=0.716 | val_loss=0.754 val_acc=0.720 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.722, 0.242, 0.117]
+    F1   [0.839, 0.390, 0.210]
+    Rcl  [0.746, 0.560, 0.574]
+    Prc  [0.958, 0.299, 0.128]
+    AccC [0.746, 0.560, 0.574]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[047/100] train_loss=0.724 train_acc=0.712 | val_loss=0.756 val_acc=0.722 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.722, 0.260, 0.109]
+    F1   [0.839, 0.413, 0.197]
+    Rcl  [0.745, 0.592, 0.550]
+    Prc  [0.960, 0.317, 0.120]
+    AccC [0.745, 0.592, 0.550]
+[048/100] train_loss=0.717 train_acc=0.738 | val_loss=0.753 val_acc=0.705 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.703, 0.238, 0.123]
+    F1   [0.825, 0.385, 0.219]
+    Rcl  [0.721, 0.618, 0.557]
+    Prc  [0.966, 0.279, 0.137]
+    AccC [0.721, 0.618, 0.557]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[049/100] train_loss=0.720 train_acc=0.724 | val_loss=0.753 val_acc=0.716 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.716, 0.249, 0.114]
+    F1   [0.834, 0.398, 0.204]
+    Rcl  [0.738, 0.584, 0.561]
+    Prc  [0.959, 0.302, 0.125]
+    AccC [0.738, 0.584, 0.561]
+[050/100] train_loss=0.712 train_acc=0.723 | val_loss=0.752 val_acc=0.755 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.761, 0.258, 0.126]
+    F1   [0.864, 0.410, 0.224]
+    Rcl  [0.791, 0.532, 0.563]
+    Prc  [0.954, 0.334, 0.140]
+    AccC [0.791, 0.532, 0.563]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[051/100] train_loss=0.708 train_acc=0.738 | val_loss=0.748 val_acc=0.743 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.743, 0.258, 0.132]
+    F1   [0.853, 0.411, 0.233]
+    Rcl  [0.769, 0.592, 0.540]
+    Prc  [0.957, 0.314, 0.149]
+    AccC [0.769, 0.592, 0.540]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[052/100] train_loss=0.704 train_acc=0.744 | val_loss=0.753 val_acc=0.703 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.706, 0.255, 0.097]
+    F1   [0.827, 0.406, 0.177]
+    Rcl  [0.726, 0.545, 0.625]
+    Prc  [0.962, 0.324, 0.103]
+    AccC [0.726, 0.545, 0.625]
+[053/100] train_loss=0.710 train_acc=0.723 | val_loss=0.753 val_acc=0.721 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.727, 0.258, 0.102]
+    F1   [0.842, 0.411, 0.186]
+    Rcl  [0.750, 0.522, 0.628]
+    Prc  [0.959, 0.339, 0.109]
+    AccC [0.750, 0.522, 0.628]
+[054/100] train_loss=0.707 train_acc=0.738 | val_loss=0.746 val_acc=0.699 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.701, 0.266, 0.093]
+    F1   [0.824, 0.420, 0.171]
+    Rcl  [0.719, 0.555, 0.643]
+    Prc  [0.966, 0.338, 0.098]
+    AccC [0.719, 0.555, 0.643]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[055/100] train_loss=0.716 train_acc=0.729 | val_loss=0.752 val_acc=0.733 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.735, 0.261, 0.116]
+    F1   [0.847, 0.414, 0.207]
+    Rcl  [0.758, 0.577, 0.565]
+    Prc  [0.959, 0.323, 0.127]
+    AccC [0.758, 0.577, 0.565]
+[056/100] train_loss=0.715 train_acc=0.715 | val_loss=0.753 val_acc=0.751 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.753, 0.247, 0.155]
+    F1   [0.859, 0.396, 0.268]
+    Rcl  [0.780, 0.579, 0.537]
+    Prc  [0.955, 0.300, 0.178]
+    AccC [0.780, 0.579, 0.537]
+[057/100] train_loss=0.705 train_acc=0.723 | val_loss=0.746 val_acc=0.730 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.733, 0.268, 0.107]
+    F1   [0.846, 0.423, 0.194]
+    Rcl  [0.757, 0.556, 0.597]
+    Prc  [0.959, 0.341, 0.116]
+    AccC [0.757, 0.556, 0.597]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[058/100] train_loss=0.696 train_acc=0.733 | val_loss=0.740 val_acc=0.729 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.731, 0.257, 0.119]
+    F1   [0.844, 0.409, 0.213]
+    Rcl  [0.753, 0.578, 0.584]
+    Prc  [0.961, 0.316, 0.130]
+    AccC [0.753, 0.578, 0.584]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[059/100] train_loss=0.696 train_acc=0.730 | val_loss=0.743 val_acc=0.764 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.769, 0.267, 0.138]
+    F1   [0.869, 0.422, 0.242]
+    Rcl  [0.798, 0.558, 0.558]
+    Prc  [0.955, 0.339, 0.155]
+    AccC [0.798, 0.558, 0.558]
+[060/100] train_loss=0.696 train_acc=0.738 | val_loss=0.737 val_acc=0.741 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.748, 0.273, 0.111]
+    F1   [0.856, 0.429, 0.200]
+    Rcl  [0.773, 0.529, 0.632]
+    Prc  [0.959, 0.361, 0.119]
+    AccC [0.773, 0.529, 0.632]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[061/100] train_loss=0.691 train_acc=0.735 | val_loss=0.742 val_acc=0.720 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.723, 0.259, 0.110]
+    F1   [0.839, 0.411, 0.197]
+    Rcl  [0.744, 0.564, 0.611]
+    Prc  [0.962, 0.323, 0.118]
+    AccC [0.744, 0.564, 0.611]
+[062/100] train_loss=0.700 train_acc=0.738 | val_loss=0.750 val_acc=0.734 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.735, 0.269, 0.111]
+    F1   [0.847, 0.425, 0.200]
+    Rcl  [0.759, 0.589, 0.547]
+    Prc  [0.959, 0.332, 0.122]
+    AccC [0.759, 0.589, 0.547]
+[063/100] train_loss=0.695 train_acc=0.728 | val_loss=0.733 val_acc=0.746 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.748, 0.249, 0.147]
+    F1   [0.856, 0.399, 0.257]
+    Rcl  [0.773, 0.582, 0.563]
+    Prc  [0.959, 0.304, 0.166]
+    AccC [0.773, 0.582, 0.563]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[064/100] train_loss=0.687 train_acc=0.739 | val_loss=0.737 val_acc=0.711 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.712, 0.282, 0.095]
+    F1   [0.832, 0.440, 0.173]
+    Rcl  [0.731, 0.578, 0.624]
+    Prc  [0.965, 0.355, 0.100]
+    AccC [0.731, 0.578, 0.624]
+[065/100] train_loss=0.689 train_acc=0.728 | val_loss=0.729 val_acc=0.732 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.733, 0.264, 0.120]
+    F1   [0.846, 0.418, 0.215]
+    Rcl  [0.754, 0.590, 0.592]
+    Prc  [0.962, 0.323, 0.131]
+    AccC [0.754, 0.590, 0.592]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[066/100] train_loss=0.691 train_acc=0.745 | val_loss=0.728 val_acc=0.720 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.719, 0.244, 0.135]
+    F1   [0.837, 0.393, 0.239]
+    Rcl  [0.738, 0.617, 0.569]
+    Prc  [0.965, 0.288, 0.151]
+    AccC [0.738, 0.617, 0.569]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[067/100] train_loss=0.679 train_acc=0.742 | val_loss=0.738 val_acc=0.788 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.794, 0.287, 0.145]
+    F1   [0.885, 0.446, 0.254]
+    Rcl  [0.827, 0.544, 0.552]
+    Prc  [0.951, 0.378, 0.165]
+    AccC [0.827, 0.544, 0.552]
+[068/100] train_loss=0.682 train_acc=0.751 | val_loss=0.722 val_acc=0.739 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.742, 0.270, 0.125]
+    F1   [0.852, 0.425, 0.222]
+    Rcl  [0.764, 0.582, 0.620]
+    Prc  [0.963, 0.335, 0.135]
+    AccC [0.764, 0.582, 0.620]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[069/100] train_loss=0.683 train_acc=0.741 | val_loss=0.728 val_acc=0.738 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.738, 0.262, 0.132]
+    F1   [0.849, 0.416, 0.233]
+    Rcl  [0.760, 0.607, 0.572]
+    Prc  [0.962, 0.316, 0.146]
+    AccC [0.760, 0.607, 0.572]
+[070/100] train_loss=0.683 train_acc=0.738 | val_loss=0.736 val_acc=0.762 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.764, 0.258, 0.163]
+    F1   [0.866, 0.410, 0.281]
+    Rcl  [0.791, 0.594, 0.534]
+    Prc  [0.957, 0.313, 0.191]
+    AccC [0.791, 0.594, 0.534]
+[071/100] train_loss=0.679 train_acc=0.735 | val_loss=0.730 val_acc=0.762 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.764, 0.261, 0.160]
+    F1   [0.866, 0.414, 0.276]
+    Rcl  [0.791, 0.595, 0.542]
+    Prc  [0.958, 0.318, 0.185]
+    AccC [0.791, 0.595, 0.542]
+[072/100] train_loss=0.686 train_acc=0.745 | val_loss=0.727 val_acc=0.742 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.746, 0.282, 0.111]
+    F1   [0.854, 0.440, 0.200]
+    Rcl  [0.769, 0.574, 0.594]
+    Prc  [0.961, 0.357, 0.120]
+    AccC [0.769, 0.574, 0.594]
+[073/100] train_loss=0.683 train_acc=0.739 | val_loss=0.730 val_acc=0.752 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.754, 0.264, 0.140]
+    F1   [0.860, 0.417, 0.246]
+    Rcl  [0.779, 0.594, 0.555]
+    Prc  [0.960, 0.321, 0.158]
+    AccC [0.779, 0.594, 0.555]
+[074/100] train_loss=0.684 train_acc=0.749 | val_loss=0.722 val_acc=0.720 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.724, 0.260, 0.110]
+    F1   [0.840, 0.413, 0.198]
+    Rcl  [0.744, 0.554, 0.644]
+    Prc  [0.965, 0.329, 0.117]
+    AccC [0.744, 0.554, 0.644]
+[075/100] train_loss=0.674 train_acc=0.730 | val_loss=0.729 val_acc=0.731 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.729, 0.267, 0.123]
+    F1   [0.844, 0.422, 0.219]
+    Rcl  [0.750, 0.622, 0.566]
+    Prc  [0.964, 0.319, 0.135]
+    AccC [0.750, 0.622, 0.566]
+[076/100] train_loss=0.671 train_acc=0.746 | val_loss=0.718 val_acc=0.737 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.735, 0.267, 0.137]
+    F1   [0.848, 0.421, 0.240]
+    Rcl  [0.755, 0.643, 0.557]
+    Prc  [0.966, 0.313, 0.153]
+    AccC [0.755, 0.643, 0.557]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[077/100] train_loss=0.673 train_acc=0.758 | val_loss=0.723 val_acc=0.731 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.733, 0.265, 0.121]
+    F1   [0.846, 0.419, 0.216]
+    Rcl  [0.754, 0.592, 0.602]
+    Prc  [0.964, 0.325, 0.131]
+    AccC [0.754, 0.592, 0.602]
+[078/100] train_loss=0.675 train_acc=0.737 | val_loss=0.732 val_acc=0.749 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.750, 0.262, 0.139]
+    F1   [0.857, 0.416, 0.245]
+    Rcl  [0.775, 0.594, 0.561]
+    Prc  [0.959, 0.320, 0.156]
+    AccC [0.775, 0.594, 0.561]
+[079/100] train_loss=0.672 train_acc=0.740 | val_loss=0.722 val_acc=0.781 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.790, 0.300, 0.127]
+    F1   [0.883, 0.461, 0.225]
+    Rcl  [0.820, 0.519, 0.624]
+    Prc  [0.956, 0.415, 0.137]
+    AccC [0.820, 0.519, 0.624]
+[080/100] train_loss=0.667 train_acc=0.741 | val_loss=0.718 val_acc=0.743 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.746, 0.310, 0.104]
+    F1   [0.854, 0.473, 0.189]
+    Rcl  [0.768, 0.587, 0.621]
+    Prc  [0.963, 0.397, 0.111]
+    AccC [0.768, 0.587, 0.621]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[081/100] train_loss=0.663 train_acc=0.743 | val_loss=0.715 val_acc=0.736 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.738, 0.266, 0.128]
+    F1   [0.849, 0.420, 0.227]
+    Rcl  [0.758, 0.604, 0.590]
+    Prc  [0.964, 0.322, 0.141]
+    AccC [0.758, 0.604, 0.590]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[082/100] train_loss=0.665 train_acc=0.759 | val_loss=0.717 val_acc=0.755 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.759, 0.284, 0.123]
+    F1   [0.863, 0.442, 0.219]
+    Rcl  [0.783, 0.576, 0.598]
+    Prc  [0.962, 0.359, 0.134]
+    AccC [0.783, 0.576, 0.598]
+[083/100] train_loss=0.662 train_acc=0.740 | val_loss=0.716 val_acc=0.766 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.770, 0.277, 0.143]
+    F1   [0.870, 0.434, 0.250]
+    Rcl  [0.795, 0.584, 0.578]
+    Prc  [0.960, 0.345, 0.160]
+    AccC [0.795, 0.584, 0.578]
+[084/100] train_loss=0.662 train_acc=0.747 | val_loss=0.711 val_acc=0.754 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.757, 0.288, 0.123]
+    F1   [0.862, 0.448, 0.218]
+    Rcl  [0.780, 0.589, 0.599]
+    Prc  [0.963, 0.361, 0.134]
+    AccC [0.780, 0.589, 0.599]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[085/100] train_loss=0.665 train_acc=0.759 | val_loss=0.717 val_acc=0.721 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.722, 0.296, 0.100]
+    F1   [0.839, 0.456, 0.181]
+    Rcl  [0.740, 0.590, 0.649]
+    Prc  [0.968, 0.372, 0.105]
+    AccC [0.740, 0.590, 0.649]
+[086/100] train_loss=0.662 train_acc=0.745 | val_loss=0.724 val_acc=0.750 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.750, 0.266, 0.148]
+    F1   [0.857, 0.420, 0.258]
+    Rcl  [0.773, 0.626, 0.536]
+    Prc  [0.961, 0.316, 0.170]
+    AccC [0.773, 0.626, 0.536]
+[087/100] train_loss=0.662 train_acc=0.754 | val_loss=0.716 val_acc=0.789 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.797, 0.291, 0.145]
+    F1   [0.887, 0.451, 0.253]
+    Rcl  [0.828, 0.535, 0.595]
+    Prc  [0.954, 0.390, 0.160]
+    AccC [0.828, 0.535, 0.595]
+[088/100] train_loss=0.662 train_acc=0.756 | val_loss=0.716 val_acc=0.771 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.772, 0.288, 0.146]
+    F1   [0.872, 0.447, 0.255]
+    Rcl  [0.798, 0.611, 0.555]
+    Prc  [0.960, 0.353, 0.165]
+    AccC [0.798, 0.611, 0.555]
+[089/100] train_loss=0.648 train_acc=0.747 | val_loss=0.705 val_acc=0.751 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.755, 0.272, 0.137]
+    F1   [0.860, 0.428, 0.241]
+    Rcl  [0.776, 0.596, 0.606]
+    Prc  [0.965, 0.334, 0.150]
+    AccC [0.776, 0.596, 0.606]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[090/100] train_loss=0.648 train_acc=0.759 | val_loss=0.704 val_acc=0.745 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.749, 0.293, 0.115]
+    F1   [0.857, 0.453, 0.206]
+    Rcl  [0.770, 0.586, 0.630]
+    Prc  [0.966, 0.370, 0.123]
+    AccC [0.770, 0.586, 0.630]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[091/100] train_loss=0.655 train_acc=0.766 | val_loss=0.716 val_acc=0.745 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.744, 0.263, 0.158]
+    F1   [0.853, 0.416, 0.273]
+    Rcl  [0.764, 0.650, 0.540]
+    Prc  [0.965, 0.306, 0.183]
+    AccC [0.764, 0.650, 0.540]
+[092/100] train_loss=0.646 train_acc=0.742 | val_loss=0.705 val_acc=0.783 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.791, 0.286, 0.151]
+    F1   [0.883, 0.445, 0.262]
+    Rcl  [0.817, 0.563, 0.600]
+    Prc  [0.960, 0.368, 0.167]
+    AccC [0.817, 0.563, 0.600]
+[093/100] train_loss=0.654 train_acc=0.760 | val_loss=0.711 val_acc=0.759 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.760, 0.281, 0.146]
+    F1   [0.864, 0.439, 0.255]
+    Rcl  [0.783, 0.629, 0.560]
+    Prc  [0.963, 0.337, 0.165]
+    AccC [0.783, 0.629, 0.560]
+[094/100] train_loss=0.641 train_acc=0.764 | val_loss=0.700 val_acc=0.743 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.743, 0.269, 0.141]
+    F1   [0.852, 0.425, 0.247]
+    Rcl  [0.762, 0.633, 0.581]
+    Prc  [0.967, 0.319, 0.157]
+    AccC [0.762, 0.633, 0.581]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[095/100] train_loss=0.656 train_acc=0.764 | val_loss=0.706 val_acc=0.767 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.776, 0.282, 0.132]
+    F1   [0.874, 0.439, 0.233]
+    Rcl  [0.801, 0.541, 0.630]
+    Prc  [0.960, 0.370, 0.143]
+    AccC [0.801, 0.541, 0.630]
+[096/100] train_loss=0.637 train_acc=0.763 | val_loss=0.696 val_acc=0.738 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.740, 0.277, 0.124]
+    F1   [0.851, 0.434, 0.221]
+    Rcl  [0.759, 0.609, 0.619]
+    Prc  [0.968, 0.337, 0.135]
+    AccC [0.759, 0.609, 0.619]
+✔ Saved improved model → Swin2dCrossEntropy_uxb_svy_100_tpi_segformer_b0_best.pth
+[097/100] train_loss=0.638 train_acc=0.759 | val_loss=0.698 val_acc=0.755 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.755, 0.277, 0.154]
+    F1   [0.861, 0.434, 0.267]
+    Rcl  [0.775, 0.649, 0.565]
+    Prc  [0.967, 0.326, 0.175]
+    AccC [0.775, 0.649, 0.565]
+[098/100] train_loss=0.641 train_acc=0.767 | val_loss=0.703 val_acc=0.783 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.786, 0.294, 0.160]
+    F1   [0.880, 0.454, 0.276]
+    Rcl  [0.811, 0.615, 0.560]
+    Prc  [0.961, 0.360, 0.184]
+    AccC [0.811, 0.615, 0.560]
+[099/100] train_loss=0.633 train_acc=0.767 | val_loss=0.703 val_acc=0.733 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.737, 0.313, 0.101]
+    F1   [0.848, 0.476, 0.184]
+    Rcl  [0.755, 0.578, 0.674]
+    Prc  [0.968, 0.405, 0.106]
+    AccC [0.755, 0.578, 0.674]
+[100/100] train_loss=0.630 train_acc=0.771 | val_loss=0.704 val_acc=0.768 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.772, 0.269, 0.167]
+    F1   [0.871, 0.424, 0.286]
+    Rcl  [0.796, 0.600, 0.580]
+    Prc  [0.962, 0.328, 0.190]
+    AccC [0.796, 0.600, 0.580]

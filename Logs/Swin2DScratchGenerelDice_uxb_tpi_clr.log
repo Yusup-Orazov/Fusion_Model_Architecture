@@ -1,0 +1,642 @@
+/work/archcomplab/yorazov2/Swin3DEnv/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:143: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+/work/archcomplab/yorazov2/Swin3DEnv/lib/python3.9/site-packages/torch/nn/modules/conv.py:456: UserWarning: Applied workaround for CuDNN issue, install nvrtc.so (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:80.)
+  return F.conv2d(input, weight, bias, self.stride,
+[001/100] train_loss=0.927 train_acc=0.400 | val_loss=0.930 val_acc=0.461 | head_lr=2.60e-05
+    IoU  [0.470, 0.053, 0.084]
+    F1   [0.639, 0.101, 0.154]
+    Rcl  [0.488, 0.190, 0.740]
+    Prc  [0.928, 0.069, 0.086]
+    AccC [0.488, 0.190, 0.740]
+✔ Saved improved model → scratch_general_dice_uxb_tpi_clr_segformer_b0_best.pth
+[002/100] train_loss=0.901 train_acc=0.448 | val_loss=0.878 val_acc=0.464 | head_lr=5.09e-05
+    IoU  [0.462, 0.074, 0.096]
+    F1   [0.632, 0.138, 0.176]
+    Rcl  [0.479, 0.295, 0.679]
+    Prc  [0.929, 0.090, 0.101]
+    AccC [0.479, 0.295, 0.679]
+✔ Saved improved model → scratch_general_dice_uxb_tpi_clr_segformer_b0_best.pth
+[003/100] train_loss=0.880 train_acc=0.454 | val_loss=0.836 val_acc=0.462 | head_lr=7.58e-05
+    IoU  [0.444, 0.094, 0.120]
+    F1   [0.615, 0.172, 0.215]
+    Rcl  [0.463, 0.436, 0.528]
+    Prc  [0.918, 0.107, 0.135]
+    AccC [0.463, 0.436, 0.528]
+✔ Saved improved model → scratch_general_dice_uxb_tpi_clr_segformer_b0_best.pth
+[004/100] train_loss=0.858 train_acc=0.460 | val_loss=0.824 val_acc=0.436 | head_lr=1.01e-04
+    IoU  [0.410, 0.099, 0.129]
+    F1   [0.581, 0.180, 0.229]
+    Rcl  [0.426, 0.498, 0.473]
+    Prc  [0.915, 0.109, 0.151]
+    AccC [0.426, 0.498, 0.473]
+✔ Saved improved model → scratch_general_dice_uxb_tpi_clr_segformer_b0_best.pth
+[005/100] train_loss=0.837 train_acc=0.469 | val_loss=0.805 val_acc=0.505 | head_lr=1.26e-04
+    IoU  [0.485, 0.109, 0.139]
+    F1   [0.653, 0.197, 0.245]
+    Rcl  [0.510, 0.498, 0.381]
+    Prc  [0.908, 0.122, 0.180]
+    AccC [0.510, 0.498, 0.381]
+✔ Saved improved model → scratch_general_dice_uxb_tpi_clr_segformer_b0_best.pth
+[006/100] train_loss=0.811 train_acc=0.487 | val_loss=0.801 val_acc=0.492 | head_lr=1.51e-04
+    IoU  [0.471, 0.108, 0.145]
+    F1   [0.640, 0.194, 0.253]
+    Rcl  [0.493, 0.501, 0.432]
+    Prc  [0.911, 0.121, 0.179]
+    AccC [0.493, 0.501, 0.432]
+✔ Saved improved model → scratch_general_dice_uxb_tpi_clr_segformer_b0_best.pth
+[007/100] train_loss=0.791 train_acc=0.498 | val_loss=0.769 val_acc=0.519 | head_lr=1.76e-04
+    IoU  [0.496, 0.118, 0.152]
+    F1   [0.663, 0.211, 0.265]
+    Rcl  [0.521, 0.539, 0.349]
+    Prc  [0.911, 0.131, 0.213]
+    AccC [0.521, 0.539, 0.349]
+✔ Saved improved model → scratch_general_dice_uxb_tpi_clr_segformer_b0_best.pth
+[008/100] train_loss=0.769 train_acc=0.507 | val_loss=0.767 val_acc=0.508 | head_lr=2.01e-04
+    IoU  [0.480, 0.126, 0.158]
+    F1   [0.648, 0.224, 0.273]
+    Rcl  [0.503, 0.608, 0.273]
+    Prc  [0.912, 0.137, 0.273]
+    AccC [0.503, 0.608, 0.273]
+✔ Saved improved model → scratch_general_dice_uxb_tpi_clr_segformer_b0_best.pth
+[009/100] train_loss=0.760 train_acc=0.507 | val_loss=0.777 val_acc=0.572 | head_lr=2.26e-04
+    IoU  [0.562, 0.110, 0.153]
+    F1   [0.720, 0.198, 0.265]
+    Rcl  [0.595, 0.423, 0.467]
+    Prc  [0.911, 0.129, 0.185]
+    AccC [0.595, 0.423, 0.467]
+[010/100] train_loss=0.746 train_acc=0.515 | val_loss=0.744 val_acc=0.456 | head_lr=2.51e-04
+    IoU  [0.415, 0.132, 0.170]
+    F1   [0.587, 0.233, 0.291]
+    Rcl  [0.427, 0.708, 0.345]
+    Prc  [0.938, 0.140, 0.252]
+    AccC [0.427, 0.708, 0.345]
+✔ Saved improved model → scratch_general_dice_uxb_tpi_clr_segformer_b0_best.pth
+[011/100] train_loss=0.733 train_acc=0.531 | val_loss=0.741 val_acc=0.508 | head_lr=2.75e-04
+    IoU  [0.477, 0.133, 0.181]
+    F1   [0.646, 0.234, 0.306]
+    Rcl  [0.496, 0.643, 0.342]
+    Prc  [0.926, 0.143, 0.277]
+    AccC [0.496, 0.643, 0.342]
+✔ Saved improved model → scratch_general_dice_uxb_tpi_clr_segformer_b0_best.pth
+[012/100] train_loss=0.714 train_acc=0.537 | val_loss=0.741 val_acc=0.485 | head_lr=3.00e-04
+    IoU  [0.449, 0.133, 0.177]
+    F1   [0.620, 0.235, 0.301]
+    Rcl  [0.465, 0.679, 0.319]
+    Prc  [0.929, 0.142, 0.286]
+    AccC [0.465, 0.679, 0.319]
+[013/100] train_loss=0.707 train_acc=0.543 | val_loss=0.767 val_acc=0.650 | head_lr=3.25e-04
+    IoU  [0.653, 0.120, 0.155]
+    F1   [0.790, 0.214, 0.269]
+    Rcl  [0.692, 0.371, 0.504]
+    Prc  [0.920, 0.151, 0.183]
+    AccC [0.692, 0.371, 0.504]
+[014/100] train_loss=0.694 train_acc=0.560 | val_loss=0.727 val_acc=0.453 | head_lr=3.50e-04
+    IoU  [0.406, 0.142, 0.180]
+    F1   [0.577, 0.249, 0.304]
+    Rcl  [0.414, 0.788, 0.298]
+    Prc  [0.954, 0.148, 0.311]
+    AccC [0.414, 0.788, 0.298]
+✔ Saved improved model → scratch_general_dice_uxb_tpi_clr_segformer_b0_best.pth
+[015/100] train_loss=0.685 train_acc=0.567 | val_loss=0.707 val_acc=0.721 | head_lr=3.75e-04
+    IoU  [0.717, 0.163, 0.201]
+    F1   [0.835, 0.281, 0.335]
+    Rcl  [0.768, 0.455, 0.315]
+    Prc  [0.914, 0.203, 0.357]
+    AccC [0.768, 0.455, 0.315]
+✔ Saved improved model → scratch_general_dice_uxb_tpi_clr_segformer_b0_best.pth
+[016/100] train_loss=0.665 train_acc=0.594 | val_loss=0.778 val_acc=0.613 | head_lr=4.00e-04
+    IoU  [0.589, 0.182, 0.136]
+    F1   [0.741, 0.308, 0.240]
+    Rcl  [0.610, 0.752, 0.154]
+    Prc  [0.944, 0.194, 0.536]
+    AccC [0.610, 0.752, 0.154]
+[017/100] train_loss=0.654 train_acc=0.624 | val_loss=0.732 val_acc=0.581 | head_lr=4.25e-04
+    IoU  [0.553, 0.164, 0.178]
+    F1   [0.713, 0.282, 0.303]
+    Rcl  [0.576, 0.715, 0.212]
+    Prc  [0.935, 0.175, 0.530]
+    AccC [0.576, 0.715, 0.212]
+[018/100] train_loss=0.651 train_acc=0.644 | val_loss=0.696 val_acc=0.648 | head_lr=4.50e-04
+    IoU  [0.631, 0.182, 0.213]
+    F1   [0.774, 0.309, 0.351]
+    Rcl  [0.654, 0.674, 0.344]
+    Prc  [0.946, 0.200, 0.358]
+    AccC [0.654, 0.674, 0.344]
+✔ Saved improved model → scratch_general_dice_uxb_tpi_clr_segformer_b0_best.pth
+[019/100] train_loss=0.626 train_acc=0.676 | val_loss=0.731 val_acc=0.696 | head_lr=4.75e-04
+    IoU  [0.686, 0.176, 0.173]
+    F1   [0.814, 0.299, 0.295]
+    Rcl  [0.730, 0.555, 0.213]
+    Prc  [0.919, 0.205, 0.482]
+    AccC [0.730, 0.555, 0.213]
+[020/100] train_loss=0.629 train_acc=0.707 | val_loss=0.688 val_acc=0.733 | head_lr=5.00e-04
+    IoU  [0.728, 0.186, 0.221]
+    F1   [0.843, 0.314, 0.361]
+    Rcl  [0.775, 0.515, 0.327]
+    Prc  [0.924, 0.225, 0.405]
+    AccC [0.775, 0.515, 0.327]
+✔ Saved improved model → scratch_general_dice_uxb_tpi_clr_segformer_b0_best.pth
+→ Unfroze last backbone stage at epoch 21
+[021/100] train_loss=0.629 train_acc=0.718 | val_loss=0.681 val_acc=0.736 | head_lr=5.00e-04 | enc_lr=5.95e-06
+    IoU  [0.730, 0.202, 0.215]
+    F1   [0.844, 0.336, 0.354]
+    Rcl  [0.772, 0.564, 0.304]
+    Prc  [0.930, 0.239, 0.423]
+    AccC [0.772, 0.564, 0.304]
+✔ Saved improved model → scratch_general_dice_uxb_tpi_clr_segformer_b0_best.pth
+[022/100] train_loss=0.625 train_acc=0.730 | val_loss=0.693 val_acc=0.770 | head_lr=5.00e-04 | enc_lr=1.09e-05
+    IoU  [0.767, 0.196, 0.208]
+    F1   [0.868, 0.327, 0.344]
+    Rcl  [0.825, 0.468, 0.269]
+    Prc  [0.916, 0.251, 0.478]
+    AccC [0.825, 0.468, 0.269]
+[023/100] train_loss=0.601 train_acc=0.751 | val_loss=0.700 val_acc=0.793 | head_lr=5.00e-04 | enc_lr=1.58e-05
+    IoU  [0.791, 0.193, 0.211]
+    F1   [0.884, 0.324, 0.349]
+    Rcl  [0.860, 0.410, 0.257]
+    Prc  [0.908, 0.267, 0.543]
+    AccC [0.860, 0.410, 0.257]
+[024/100] train_loss=0.588 train_acc=0.757 | val_loss=0.680 val_acc=0.792 | head_lr=5.00e-04 | enc_lr=2.08e-05
+    IoU  [0.796, 0.152, 0.218]
+    F1   [0.886, 0.264, 0.358]
+    Rcl  [0.870, 0.300, 0.359]
+    Prc  [0.903, 0.235, 0.356]
+    AccC [0.870, 0.300, 0.359]
+✔ Saved improved model → scratch_general_dice_uxb_tpi_clr_segformer_b0_best.pth
+[025/100] train_loss=0.596 train_acc=0.767 | val_loss=0.688 val_acc=0.760 | head_lr=5.00e-04 | enc_lr=2.58e-05
+    IoU  [0.755, 0.216, 0.208]
+    F1   [0.860, 0.356, 0.345]
+    Rcl  [0.802, 0.565, 0.252]
+    Prc  [0.928, 0.260, 0.544]
+    AccC [0.802, 0.565, 0.252]
+[026/100] train_loss=0.584 train_acc=0.779 | val_loss=0.662 val_acc=0.778 | head_lr=5.00e-04 | enc_lr=3.07e-05
+    IoU  [0.776, 0.219, 0.237]
+    F1   [0.874, 0.360, 0.383]
+    Rcl  [0.826, 0.525, 0.320]
+    Prc  [0.927, 0.273, 0.478]
+    AccC [0.826, 0.525, 0.320]
+✔ Saved improved model → scratch_general_dice_uxb_tpi_clr_segformer_b0_best.pth
+[027/100] train_loss=0.568 train_acc=0.783 | val_loss=0.666 val_acc=0.736 | head_lr=5.00e-04 | enc_lr=3.56e-05
+    IoU  [0.730, 0.204, 0.237]
+    F1   [0.844, 0.339, 0.383]
+    Rcl  [0.770, 0.573, 0.347]
+    Prc  [0.934, 0.240, 0.429]
+    AccC [0.770, 0.573, 0.347]
+[028/100] train_loss=0.562 train_acc=0.784 | val_loss=0.655 val_acc=0.775 | head_lr=5.00e-04 | enc_lr=4.06e-05
+    IoU  [0.772, 0.208, 0.243]
+    F1   [0.871, 0.345, 0.391]
+    Rcl  [0.827, 0.499, 0.303]
+    Prc  [0.921, 0.263, 0.552]
+    AccC [0.827, 0.499, 0.303]
+✔ Saved improved model → scratch_general_dice_uxb_tpi_clr_segformer_b0_best.pth
+[029/100] train_loss=0.544 train_acc=0.788 | val_loss=0.649 val_acc=0.771 | head_lr=5.00e-04 | enc_lr=4.56e-05
+    IoU  [0.766, 0.209, 0.250]
+    F1   [0.867, 0.345, 0.400]
+    Rcl  [0.820, 0.512, 0.297]
+    Prc  [0.921, 0.261, 0.610]
+    AccC [0.820, 0.512, 0.297]
+✔ Saved improved model → scratch_general_dice_uxb_tpi_clr_segformer_b0_best.pth
+[030/100] train_loss=0.555 train_acc=0.788 | val_loss=0.638 val_acc=0.736 | head_lr=5.00e-04 | enc_lr=5.05e-05
+    IoU  [0.729, 0.209, 0.259]
+    F1   [0.843, 0.346, 0.412]
+    Rcl  [0.767, 0.596, 0.366]
+    Prc  [0.937, 0.244, 0.472]
+    AccC [0.767, 0.596, 0.366]
+✔ Saved improved model → scratch_general_dice_uxb_tpi_clr_segformer_b0_best.pth
+[031/100] train_loss=0.544 train_acc=0.791 | val_loss=0.670 val_acc=0.786 | head_lr=5.00e-04 | enc_lr=5.54e-05
+    IoU  [0.785, 0.196, 0.225]
+    F1   [0.880, 0.328, 0.367]
+    Rcl  [0.847, 0.432, 0.322]
+    Prc  [0.916, 0.264, 0.427]
+    AccC [0.847, 0.432, 0.322]
+[032/100] train_loss=0.537 train_acc=0.792 | val_loss=0.678 val_acc=0.828 | head_lr=5.00e-04 | enc_lr=6.04e-05
+    IoU  [0.828, 0.202, 0.225]
+    F1   [0.906, 0.336, 0.367]
+    Rcl  [0.909, 0.354, 0.255]
+    Prc  [0.903, 0.321, 0.655]
+    AccC [0.909, 0.354, 0.255]
+[033/100] train_loss=0.537 train_acc=0.793 | val_loss=0.644 val_acc=0.806 | head_lr=5.00e-04 | enc_lr=6.54e-05
+    IoU  [0.807, 0.213, 0.250]
+    F1   [0.893, 0.351, 0.400]
+    Rcl  [0.870, 0.430, 0.355]
+    Prc  [0.918, 0.296, 0.459]
+    AccC [0.870, 0.430, 0.355]
+[034/100] train_loss=0.530 train_acc=0.794 | val_loss=0.736 val_acc=0.798 | head_lr=5.00e-04 | enc_lr=7.03e-05
+    IoU  [0.796, 0.221, 0.160]
+    F1   [0.886, 0.361, 0.276]
+    Rcl  [0.860, 0.477, 0.170]
+    Prc  [0.914, 0.291, 0.743]
+    AccC [0.860, 0.477, 0.170]
+[035/100] train_loss=0.522 train_acc=0.794 | val_loss=0.707 val_acc=0.826 | head_lr=5.00e-04 | enc_lr=7.52e-05
+    IoU  [0.825, 0.208, 0.193]
+    F1   [0.904, 0.344, 0.324]
+    Rcl  [0.905, 0.372, 0.207]
+    Prc  [0.903, 0.320, 0.743]
+    AccC [0.905, 0.372, 0.207]
+[036/100] train_loss=0.507 train_acc=0.798 | val_loss=0.677 val_acc=0.806 | head_lr=5.00e-04 | enc_lr=8.02e-05
+    IoU  [0.804, 0.222, 0.219]
+    F1   [0.891, 0.364, 0.359]
+    Rcl  [0.869, 0.465, 0.238]
+    Prc  [0.915, 0.299, 0.735]
+    AccC [0.869, 0.465, 0.238]
+[037/100] train_loss=0.509 train_acc=0.797 | val_loss=0.663 val_acc=0.817 | head_lr=5.00e-04 | enc_lr=8.51e-05
+    IoU  [0.816, 0.194, 0.229]
+    F1   [0.899, 0.324, 0.372]
+    Rcl  [0.895, 0.357, 0.260]
+    Prc  [0.902, 0.297, 0.653]
+    AccC [0.895, 0.357, 0.260]
+[038/100] train_loss=0.512 train_acc=0.801 | val_loss=0.639 val_acc=0.804 | head_lr=5.00e-04 | enc_lr=9.01e-05
+    IoU  [0.809, 0.211, 0.250]
+    F1   [0.894, 0.348, 0.400]
+    Rcl  [0.866, 0.420, 0.462]
+    Prc  [0.925, 0.298, 0.353]
+    AccC [0.866, 0.420, 0.462]
+[039/100] train_loss=0.508 train_acc=0.801 | val_loss=0.601 val_acc=0.750 | head_lr=5.00e-04 | enc_lr=9.51e-05
+    IoU  [0.743, 0.220, 0.288]
+    F1   [0.852, 0.361, 0.447]
+    Rcl  [0.781, 0.602, 0.399]
+    Prc  [0.939, 0.257, 0.509]
+    AccC [0.781, 0.602, 0.399]
+✔ Saved improved model → scratch_general_dice_uxb_tpi_clr_segformer_b0_best.pth
+[040/100] train_loss=0.510 train_acc=0.797 | val_loss=0.640 val_acc=0.786 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.788, 0.211, 0.251]
+    F1   [0.881, 0.348, 0.401]
+    Rcl  [0.838, 0.469, 0.449]
+    Prc  [0.930, 0.277, 0.362]
+    AccC [0.838, 0.469, 0.449]
+[041/100] train_loss=0.494 train_acc=0.799 | val_loss=0.605 val_acc=0.831 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.831, 0.210, 0.285]
+    F1   [0.908, 0.347, 0.444]
+    Rcl  [0.907, 0.367, 0.353]
+    Prc  [0.909, 0.329, 0.599]
+    AccC [0.907, 0.367, 0.353]
+[042/100] train_loss=0.490 train_acc=0.800 | val_loss=0.687 val_acc=0.819 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.818, 0.230, 0.208]
+    F1   [0.900, 0.374, 0.345]
+    Rcl  [0.887, 0.447, 0.222]
+    Prc  [0.913, 0.321, 0.769]
+    AccC [0.887, 0.447, 0.222]
+[043/100] train_loss=0.482 train_acc=0.796 | val_loss=0.610 val_acc=0.806 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.803, 0.235, 0.277]
+    F1   [0.891, 0.380, 0.434]
+    Rcl  [0.862, 0.499, 0.315]
+    Prc  [0.922, 0.307, 0.695]
+    AccC [0.862, 0.499, 0.315]
+[044/100] train_loss=0.475 train_acc=0.803 | val_loss=0.591 val_acc=0.758 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.751, 0.226, 0.296]
+    F1   [0.858, 0.369, 0.457]
+    Rcl  [0.789, 0.602, 0.418]
+    Prc  [0.939, 0.266, 0.503]
+    AccC [0.789, 0.602, 0.418]
+✔ Saved improved model → scratch_general_dice_uxb_tpi_clr_segformer_b0_best.pth
+[045/100] train_loss=0.479 train_acc=0.800 | val_loss=0.616 val_acc=0.778 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.772, 0.233, 0.274]
+    F1   [0.871, 0.378, 0.430]
+    Rcl  [0.819, 0.577, 0.309]
+    Prc  [0.930, 0.281, 0.707]
+    AccC [0.819, 0.577, 0.309]
+[046/100] train_loss=0.470 train_acc=0.799 | val_loss=0.614 val_acc=0.800 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.795, 0.244, 0.278]
+    F1   [0.886, 0.393, 0.435]
+    Rcl  [0.849, 0.549, 0.301]
+    Prc  [0.927, 0.306, 0.782]
+    AccC [0.849, 0.549, 0.301]
+[047/100] train_loss=0.468 train_acc=0.801 | val_loss=0.593 val_acc=0.773 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.766, 0.239, 0.291]
+    F1   [0.868, 0.385, 0.451]
+    Rcl  [0.809, 0.608, 0.342]
+    Prc  [0.936, 0.282, 0.661]
+    AccC [0.809, 0.608, 0.342]
+[048/100] train_loss=0.470 train_acc=0.802 | val_loss=0.574 val_acc=0.799 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.797, 0.233, 0.312]
+    F1   [0.887, 0.377, 0.476]
+    Rcl  [0.849, 0.511, 0.427]
+    Prc  [0.929, 0.299, 0.537]
+    AccC [0.849, 0.511, 0.427]
+✔ Saved improved model → scratch_general_dice_uxb_tpi_clr_segformer_b0_best.pth
+[049/100] train_loss=0.460 train_acc=0.802 | val_loss=0.568 val_acc=0.798 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.794, 0.232, 0.316]
+    F1   [0.885, 0.377, 0.481]
+    Rcl  [0.848, 0.517, 0.386]
+    Prc  [0.926, 0.297, 0.636]
+    AccC [0.848, 0.517, 0.386]
+✔ Saved improved model → scratch_general_dice_uxb_tpi_clr_segformer_b0_best.pth
+[050/100] train_loss=0.459 train_acc=0.805 | val_loss=0.575 val_acc=0.793 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.788, 0.235, 0.308]
+    F1   [0.881, 0.381, 0.470]
+    Rcl  [0.840, 0.541, 0.362]
+    Prc  [0.928, 0.294, 0.672]
+    AccC [0.840, 0.541, 0.362]
+[051/100] train_loss=0.450 train_acc=0.806 | val_loss=0.564 val_acc=0.794 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.790, 0.237, 0.321]
+    F1   [0.882, 0.383, 0.486]
+    Rcl  [0.840, 0.541, 0.403]
+    Prc  [0.930, 0.297, 0.613]
+    AccC [0.840, 0.541, 0.403]
+✔ Saved improved model → scratch_general_dice_uxb_tpi_clr_segformer_b0_best.pth
+[052/100] train_loss=0.448 train_acc=0.803 | val_loss=0.584 val_acc=0.824 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.826, 0.216, 0.301]
+    F1   [0.904, 0.356, 0.463]
+    Rcl  [0.892, 0.399, 0.438]
+    Prc  [0.918, 0.321, 0.490]
+    AccC [0.892, 0.399, 0.438]
+[053/100] train_loss=0.452 train_acc=0.805 | val_loss=0.566 val_acc=0.811 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.809, 0.236, 0.317]
+    F1   [0.894, 0.382, 0.481]
+    Rcl  [0.865, 0.489, 0.420]
+    Prc  [0.926, 0.314, 0.563]
+    AccC [0.865, 0.489, 0.420]
+[054/100] train_loss=0.445 train_acc=0.798 | val_loss=0.572 val_acc=0.832 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.832, 0.232, 0.313]
+    F1   [0.908, 0.377, 0.477]
+    Rcl  [0.902, 0.418, 0.371]
+    Prc  [0.915, 0.343, 0.667]
+    AccC [0.902, 0.418, 0.371]
+[055/100] train_loss=0.444 train_acc=0.802 | val_loss=0.598 val_acc=0.832 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.831, 0.218, 0.290]
+    F1   [0.908, 0.358, 0.450]
+    Rcl  [0.907, 0.385, 0.325]
+    Prc  [0.908, 0.335, 0.734]
+    AccC [0.907, 0.385, 0.325]
+[056/100] train_loss=0.440 train_acc=0.797 | val_loss=0.622 val_acc=0.797 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.792, 0.240, 0.269]
+    F1   [0.884, 0.387, 0.424]
+    Rcl  [0.847, 0.542, 0.283]
+    Prc  [0.924, 0.301, 0.842]
+    AccC [0.847, 0.542, 0.283]
+[057/100] train_loss=0.439 train_acc=0.803 | val_loss=0.565 val_acc=0.796 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.792, 0.234, 0.322]
+    F1   [0.884, 0.379, 0.487]
+    Rcl  [0.843, 0.527, 0.408]
+    Prc  [0.928, 0.296, 0.605]
+    AccC [0.843, 0.527, 0.408]
+[058/100] train_loss=0.427 train_acc=0.805 | val_loss=0.558 val_acc=0.794 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.789, 0.246, 0.328]
+    F1   [0.882, 0.395, 0.494]
+    Rcl  [0.837, 0.571, 0.379]
+    Prc  [0.932, 0.302, 0.712]
+    AccC [0.837, 0.571, 0.379]
+✔ Saved improved model → scratch_general_dice_uxb_tpi_clr_segformer_b0_best.pth
+[059/100] train_loss=0.421 train_acc=0.807 | val_loss=0.573 val_acc=0.820 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.817, 0.242, 0.311]
+    F1   [0.899, 0.389, 0.475]
+    Rcl  [0.881, 0.478, 0.341]
+    Prc  [0.919, 0.328, 0.779]
+    AccC [0.881, 0.478, 0.341]
+[060/100] train_loss=0.424 train_acc=0.806 | val_loss=0.553 val_acc=0.789 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.783, 0.244, 0.337]
+    F1   [0.878, 0.393, 0.504]
+    Rcl  [0.829, 0.582, 0.388]
+    Prc  [0.933, 0.296, 0.717]
+    AccC [0.829, 0.582, 0.388]
+✔ Saved improved model → scratch_general_dice_uxb_tpi_clr_segformer_b0_best.pth
+[061/100] train_loss=0.409 train_acc=0.805 | val_loss=0.541 val_acc=0.799 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.794, 0.245, 0.342]
+    F1   [0.885, 0.394, 0.510]
+    Rcl  [0.843, 0.555, 0.411]
+    Prc  [0.931, 0.306, 0.671]
+    AccC [0.843, 0.555, 0.411]
+✔ Saved improved model → scratch_general_dice_uxb_tpi_clr_segformer_b0_best.pth
+[062/100] train_loss=0.416 train_acc=0.805 | val_loss=0.571 val_acc=0.792 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.789, 0.238, 0.317]
+    F1   [0.882, 0.384, 0.481]
+    Rcl  [0.836, 0.542, 0.457]
+    Prc  [0.934, 0.297, 0.509]
+    AccC [0.836, 0.542, 0.457]
+[063/100] train_loss=0.430 train_acc=0.805 | val_loss=0.575 val_acc=0.820 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.817, 0.237, 0.308]
+    F1   [0.899, 0.384, 0.471]
+    Rcl  [0.882, 0.465, 0.352]
+    Prc  [0.918, 0.326, 0.711]
+    AccC [0.882, 0.465, 0.352]
+[064/100] train_loss=0.428 train_acc=0.805 | val_loss=0.559 val_acc=0.799 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.794, 0.247, 0.329]
+    F1   [0.885, 0.396, 0.495]
+    Rcl  [0.844, 0.558, 0.387]
+    Prc  [0.931, 0.307, 0.687]
+    AccC [0.844, 0.558, 0.387]
+[065/100] train_loss=0.413 train_acc=0.804 | val_loss=0.546 val_acc=0.746 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.735, 0.228, 0.341]
+    F1   [0.847, 0.371, 0.508]
+    Rcl  [0.770, 0.646, 0.415]
+    Prc  [0.941, 0.260, 0.656]
+    AccC [0.770, 0.646, 0.415]
+[066/100] train_loss=0.408 train_acc=0.804 | val_loss=0.542 val_acc=0.785 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.779, 0.239, 0.349]
+    F1   [0.876, 0.386, 0.517]
+    Rcl  [0.823, 0.575, 0.452]
+    Prc  [0.936, 0.290, 0.604]
+    AccC [0.823, 0.575, 0.452]
+[067/100] train_loss=0.404 train_acc=0.805 | val_loss=0.538 val_acc=0.802 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.796, 0.252, 0.342]
+    F1   [0.887, 0.402, 0.509]
+    Rcl  [0.845, 0.570, 0.390]
+    Prc  [0.933, 0.311, 0.734]
+    AccC [0.845, 0.570, 0.390]
+✔ Saved improved model → scratch_general_dice_uxb_tpi_clr_segformer_b0_best.pth
+[068/100] train_loss=0.398 train_acc=0.806 | val_loss=0.538 val_acc=0.784 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.777, 0.243, 0.352]
+    F1   [0.874, 0.391, 0.521]
+    Rcl  [0.820, 0.594, 0.435]
+    Prc  [0.937, 0.292, 0.649]
+    AccC [0.820, 0.594, 0.435]
+✔ Saved improved model → scratch_general_dice_uxb_tpi_clr_segformer_b0_best.pth
+[069/100] train_loss=0.403 train_acc=0.807 | val_loss=0.536 val_acc=0.822 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.820, 0.242, 0.348]
+    F1   [0.901, 0.390, 0.516]
+    Rcl  [0.881, 0.477, 0.404]
+    Prc  [0.922, 0.330, 0.714]
+    AccC [0.881, 0.477, 0.404]
+✔ Saved improved model → scratch_general_dice_uxb_tpi_clr_segformer_b0_best.pth
+[070/100] train_loss=0.405 train_acc=0.801 | val_loss=0.541 val_acc=0.781 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.773, 0.242, 0.342]
+    F1   [0.872, 0.390, 0.510]
+    Rcl  [0.817, 0.601, 0.386]
+    Prc  [0.935, 0.288, 0.753]
+    AccC [0.817, 0.601, 0.386]
+[071/100] train_loss=0.396 train_acc=0.806 | val_loss=0.540 val_acc=0.740 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.727, 0.229, 0.346]
+    F1   [0.842, 0.373, 0.515]
+    Rcl  [0.760, 0.667, 0.420]
+    Prc  [0.944, 0.258, 0.664]
+    AccC [0.760, 0.667, 0.420]
+[072/100] train_loss=0.411 train_acc=0.808 | val_loss=0.560 val_acc=0.815 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.811, 0.252, 0.326]
+    F1   [0.896, 0.403, 0.491]
+    Rcl  [0.868, 0.525, 0.350]
+    Prc  [0.925, 0.327, 0.826]
+    AccC [0.868, 0.525, 0.350]
+[073/100] train_loss=0.413 train_acc=0.809 | val_loss=0.540 val_acc=0.823 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.821, 0.243, 0.344]
+    F1   [0.902, 0.391, 0.512]
+    Rcl  [0.882, 0.475, 0.418]
+    Prc  [0.923, 0.332, 0.660]
+    AccC [0.882, 0.475, 0.418]
+[074/100] train_loss=0.406 train_acc=0.811 | val_loss=0.624 val_acc=0.829 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.827, 0.234, 0.262]
+    F1   [0.905, 0.380, 0.415]
+    Rcl  [0.900, 0.430, 0.274]
+    Prc  [0.911, 0.340, 0.859]
+    AccC [0.900, 0.430, 0.274]
+[075/100] train_loss=0.396 train_acc=0.809 | val_loss=0.533 val_acc=0.817 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.813, 0.242, 0.354]
+    F1   [0.897, 0.390, 0.522]
+    Rcl  [0.873, 0.490, 0.411]
+    Prc  [0.922, 0.324, 0.715]
+    AccC [0.873, 0.490, 0.411]
+✔ Saved improved model → scratch_general_dice_uxb_tpi_clr_segformer_b0_best.pth
+[076/100] train_loss=0.390 train_acc=0.813 | val_loss=0.593 val_acc=0.812 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.808, 0.252, 0.292]
+    F1   [0.894, 0.402, 0.452]
+    Rcl  [0.864, 0.536, 0.305]
+    Prc  [0.925, 0.322, 0.867]
+    AccC [0.864, 0.536, 0.305]
+[077/100] train_loss=0.372 train_acc=0.810 | val_loss=0.523 val_acc=0.792 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.785, 0.248, 0.366]
+    F1   [0.879, 0.397, 0.536]
+    Rcl  [0.831, 0.587, 0.404]
+    Prc  [0.933, 0.300, 0.795]
+    AccC [0.831, 0.587, 0.404]
+✔ Saved improved model → scratch_general_dice_uxb_tpi_clr_segformer_b0_best.pth
+[078/100] train_loss=0.388 train_acc=0.810 | val_loss=0.628 val_acc=0.834 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.832, 0.238, 0.257]
+    F1   [0.908, 0.384, 0.409]
+    Rcl  [0.906, 0.425, 0.267]
+    Prc  [0.911, 0.351, 0.876]
+    AccC [0.906, 0.425, 0.267]
+[079/100] train_loss=0.393 train_acc=0.810 | val_loss=0.540 val_acc=0.757 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.746, 0.238, 0.340]
+    F1   [0.855, 0.384, 0.507]
+    Rcl  [0.782, 0.656, 0.395]
+    Prc  [0.942, 0.272, 0.710]
+    AccC [0.782, 0.656, 0.395]
+[080/100] train_loss=0.386 train_acc=0.812 | val_loss=0.518 val_acc=0.817 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.814, 0.248, 0.369]
+    F1   [0.897, 0.397, 0.539]
+    Rcl  [0.868, 0.510, 0.454]
+    Prc  [0.928, 0.325, 0.662]
+    AccC [0.868, 0.510, 0.454]
+✔ Saved improved model → scratch_general_dice_uxb_tpi_clr_segformer_b0_best.pth
+[081/100] train_loss=0.386 train_acc=0.813 | val_loss=0.552 val_acc=0.827 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.824, 0.251, 0.329]
+    F1   [0.903, 0.402, 0.495]
+    Rcl  [0.886, 0.488, 0.354]
+    Prc  [0.921, 0.341, 0.823]
+    AccC [0.886, 0.488, 0.354]
+[082/100] train_loss=0.373 train_acc=0.814 | val_loss=0.525 val_acc=0.739 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.725, 0.231, 0.366]
+    F1   [0.841, 0.375, 0.536]
+    Rcl  [0.757, 0.681, 0.413]
+    Prc  [0.945, 0.259, 0.763]
+    AccC [0.757, 0.681, 0.413]
+[083/100] train_loss=0.376 train_acc=0.811 | val_loss=0.543 val_acc=0.812 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.808, 0.251, 0.342]
+    F1   [0.894, 0.401, 0.510]
+    Rcl  [0.862, 0.536, 0.383]
+    Prc  [0.928, 0.321, 0.761]
+    AccC [0.862, 0.536, 0.383]
+[084/100] train_loss=0.392 train_acc=0.812 | val_loss=0.522 val_acc=0.783 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.776, 0.243, 0.365]
+    F1   [0.874, 0.391, 0.535]
+    Rcl  [0.820, 0.595, 0.428]
+    Prc  [0.936, 0.291, 0.714]
+    AccC [0.820, 0.595, 0.428]
+[085/100] train_loss=0.371 train_acc=0.811 | val_loss=0.519 val_acc=0.825 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.823, 0.244, 0.367]
+    F1   [0.903, 0.393, 0.537]
+    Rcl  [0.883, 0.474, 0.449]
+    Prc  [0.923, 0.335, 0.669]
+    AccC [0.883, 0.474, 0.449]
+[086/100] train_loss=0.374 train_acc=0.814 | val_loss=0.520 val_acc=0.829 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.827, 0.244, 0.367]
+    F1   [0.905, 0.392, 0.537]
+    Rcl  [0.890, 0.460, 0.437]
+    Prc  [0.921, 0.341, 0.695]
+    AccC [0.890, 0.460, 0.437]
+[087/100] train_loss=0.367 train_acc=0.812 | val_loss=0.512 val_acc=0.808 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.805, 0.248, 0.375]
+    F1   [0.892, 0.398, 0.546]
+    Rcl  [0.855, 0.537, 0.478]
+    Prc  [0.932, 0.316, 0.636]
+    AccC [0.855, 0.537, 0.478]
+✔ Saved improved model → scratch_general_dice_uxb_tpi_clr_segformer_b0_best.pth
+[088/100] train_loss=0.364 train_acc=0.816 | val_loss=0.513 val_acc=0.775 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.765, 0.250, 0.372]
+    F1   [0.867, 0.401, 0.542]
+    Rcl  [0.803, 0.649, 0.419]
+    Prc  [0.942, 0.290, 0.769]
+    AccC [0.803, 0.649, 0.419]
+[089/100] train_loss=0.370 train_acc=0.817 | val_loss=0.513 val_acc=0.802 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.796, 0.252, 0.378]
+    F1   [0.886, 0.403, 0.549]
+    Rcl  [0.845, 0.570, 0.415]
+    Prc  [0.931, 0.312, 0.810]
+    AccC [0.845, 0.570, 0.415]
+[090/100] train_loss=0.368 train_acc=0.819 | val_loss=0.539 val_acc=0.823 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.819, 0.247, 0.348]
+    F1   [0.901, 0.396, 0.516]
+    Rcl  [0.881, 0.485, 0.383]
+    Prc  [0.920, 0.335, 0.790]
+    AccC [0.881, 0.485, 0.383]
+[091/100] train_loss=0.366 train_acc=0.817 | val_loss=0.537 val_acc=0.846 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.845, 0.231, 0.347]
+    F1   [0.916, 0.375, 0.515]
+    Rcl  [0.922, 0.378, 0.388]
+    Prc  [0.910, 0.373, 0.764]
+    AccC [0.922, 0.378, 0.388]
+[092/100] train_loss=0.372 train_acc=0.822 | val_loss=0.539 val_acc=0.843 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.842, 0.244, 0.347]
+    F1   [0.914, 0.392, 0.515]
+    Rcl  [0.914, 0.416, 0.380]
+    Prc  [0.914, 0.370, 0.800]
+    AccC [0.914, 0.416, 0.380]
+[093/100] train_loss=0.376 train_acc=0.818 | val_loss=0.586 val_acc=0.792 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.785, 0.259, 0.306]
+    F1   [0.880, 0.412, 0.468]
+    Rcl  [0.829, 0.626, 0.317]
+    Prc  [0.937, 0.307, 0.893]
+    AccC [0.829, 0.626, 0.317]
+[094/100] train_loss=0.372 train_acc=0.820 | val_loss=0.517 val_acc=0.673 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.649, 0.211, 0.374]
+    F1   [0.787, 0.348, 0.544]
+    Rcl  [0.669, 0.763, 0.444]
+    Prc  [0.956, 0.225, 0.703]
+    AccC [0.669, 0.763, 0.444]
+[095/100] train_loss=0.365 train_acc=0.820 | val_loss=0.509 val_acc=0.793 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.786, 0.255, 0.378]
+    F1   [0.880, 0.406, 0.549]
+    Rcl  [0.830, 0.607, 0.429]
+    Prc  [0.937, 0.305, 0.762]
+    AccC [0.830, 0.607, 0.429]
+✔ Saved improved model → scratch_general_dice_uxb_tpi_clr_segformer_b0_best.pth
+[096/100] train_loss=0.360 train_acc=0.818 | val_loss=0.493 val_acc=0.807 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.802, 0.252, 0.393]
+    F1   [0.890, 0.403, 0.564]
+    Rcl  [0.851, 0.555, 0.462]
+    Prc  [0.932, 0.316, 0.725]
+    AccC [0.851, 0.555, 0.462]
+✔ Saved improved model → scratch_general_dice_uxb_tpi_clr_segformer_b0_best.pth
+[097/100] train_loss=0.354 train_acc=0.824 | val_loss=0.500 val_acc=0.778 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.769, 0.250, 0.382]
+    F1   [0.869, 0.400, 0.553]
+    Rcl  [0.807, 0.638, 0.451]
+    Prc  [0.942, 0.292, 0.715]
+    AccC [0.807, 0.638, 0.451]
+[098/100] train_loss=0.351 train_acc=0.821 | val_loss=0.499 val_acc=0.796 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.789, 0.256, 0.389]
+    F1   [0.882, 0.408, 0.560]
+    Rcl  [0.831, 0.603, 0.467]
+    Prc  [0.939, 0.308, 0.701]
+    AccC [0.831, 0.603, 0.467]
+[099/100] train_loss=0.356 train_acc=0.825 | val_loss=0.521 val_acc=0.823 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.820, 0.244, 0.373]
+    F1   [0.901, 0.393, 0.543]
+    Rcl  [0.881, 0.479, 0.433]
+    Prc  [0.922, 0.333, 0.729]
+    AccC [0.881, 0.479, 0.433]
+[100/100] train_loss=0.364 train_acc=0.823 | val_loss=0.501 val_acc=0.771 | head_lr=5.00e-04 | enc_lr=1.00e-04
+    IoU  [0.760, 0.249, 0.388]
+    F1   [0.864, 0.399, 0.559]
+    Rcl  [0.796, 0.658, 0.451]
+    Prc  [0.944, 0.286, 0.737]
+    AccC [0.796, 0.658, 0.451]

@@ -1,0 +1,417 @@
+Unable to disable persistence mode for GPU 00000000:5E:00.0: Insufficient Permissions
+Unable to disable persistence mode for GPU 00000000:D8:00.0: Insufficient Permissions
+Some weights of the model checkpoint at nvidia/segformer-b0-finetuned-ade-512-512 were not used when initializing SegformerModel: ['decode_head.linear_c.0.proj.weight', 'decode_head.linear_c.1.proj.weight', 'decode_head.linear_c.3.proj.weight', 'decode_head.linear_c.0.proj.bias', 'decode_head.batch_norm.bias', 'decode_head.classifier.bias', 'decode_head.linear_c.1.proj.bias', 'decode_head.linear_c.2.proj.weight', 'decode_head.linear_c.3.proj.bias', 'decode_head.batch_norm.running_mean', 'decode_head.batch_norm.weight', 'decode_head.classifier.weight', 'decode_head.batch_norm.running_var', 'decode_head.batch_norm.num_batches_tracked', 'decode_head.linear_fuse.weight', 'decode_head.linear_c.2.proj.bias']
+- This IS expected if you are initializing SegformerModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing SegformerModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Scanning dataset for minority voxels …
+Epoch 001/100 head_lr=1.19e-06 enc_lr=0.00e+00
+Applied workaround for CuDNN issue, install nvrtc.so (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:80.)
+[001] train=4.118/0.951 │ val=3.661/1.000
+    IoU  [1.000, 0.008, 0.059]
+    F1   [1.000, 0.016, 0.112]
+    Rec  [1.000, 0.010, 0.096]
+    Prec [1.000, 0.041, 0.134]
+    AccC [1.000, 0.010, 0.096]
+✔ saved best → FusedSwinDice+Cross_tpi_clr_swin_best.pth
+Epoch 002/100 head_lr=2.18e-06 enc_lr=0.00e+00
+[002] train=3.536/0.998 │ val=3.392/1.000
+    IoU  [1.000, 0.081, 0.063]
+    F1   [1.000, 0.149, 0.119]
+    Rec  [1.000, 0.150, 0.195]
+    Prec [1.000, 0.149, 0.086]
+    AccC [1.000, 0.150, 0.195]
+✔ saved best → FusedSwinDice+Cross_tpi_clr_swin_best.pth
+Epoch 003/100 head_lr=3.17e-06 enc_lr=0.00e+00
+[003] train=3.484/0.998 │ val=3.236/0.999
+    IoU  [0.999, 0.166, 0.060]
+    F1   [1.000, 0.285, 0.114]
+    Rec  [0.999, 0.505, 0.238]
+    Prec [1.000, 0.199, 0.075]
+    AccC [0.999, 0.505, 0.238]
+✔ saved best → FusedSwinDice+Cross_tpi_clr_swin_best.pth
+Epoch 004/100 head_lr=4.16e-06 enc_lr=0.00e+00
+[004] train=3.245/0.997 │ val=3.076/0.999
+    IoU  [0.999, 0.190, 0.104]
+    F1   [1.000, 0.320, 0.189]
+    Rec  [0.999, 0.657, 0.453]
+    Prec [1.000, 0.211, 0.119]
+    AccC [0.999, 0.657, 0.453]
+✔ saved best → FusedSwinDice+Cross_tpi_clr_swin_best.pth
+Epoch 005/100 head_lr=5.15e-06 enc_lr=0.00e+00
+[005] train=3.191/0.998 │ val=2.888/0.999
+    IoU  [0.999, 0.209, 0.068]
+    F1   [1.000, 0.345, 0.127]
+    Rec  [1.000, 0.420, 0.892]
+    Prec [1.000, 0.293, 0.069]
+    AccC [1.000, 0.420, 0.892]
+✔ saved best → FusedSwinDice+Cross_tpi_clr_swin_best.pth
+Epoch 006/100 head_lr=6.14e-06 enc_lr=0.00e+00
+[006] train=2.942/0.998 │ val=2.656/1.000
+    IoU  [1.000, 0.263, 0.137]
+    F1   [1.000, 0.416, 0.241]
+    Rec  [1.000, 0.437, 0.891]
+    Prec [1.000, 0.398, 0.139]
+    AccC [1.000, 0.437, 0.891]
+✔ saved best → FusedSwinDice+Cross_tpi_clr_swin_best.pth
+Epoch 007/100 head_lr=7.13e-06 enc_lr=0.00e+00
+[007] train=2.849/0.998 │ val=2.378/1.000
+    IoU  [1.000, 0.363, 0.310]
+    F1   [1.000, 0.533, 0.473]
+    Rec  [1.000, 0.563, 0.847]
+    Prec [1.000, 0.506, 0.329]
+    AccC [1.000, 0.563, 0.847]
+✔ saved best → FusedSwinDice+Cross_tpi_clr_swin_best.pth
+Epoch 008/100 head_lr=8.12e-06 enc_lr=0.00e+00
+[008] train=2.625/0.998 │ val=2.117/1.000
+    IoU  [1.000, 0.481, 0.439]
+    F1   [1.000, 0.650, 0.610]
+    Rec  [1.000, 0.735, 0.710]
+    Prec [1.000, 0.582, 0.535]
+    AccC [1.000, 0.735, 0.710]
+✔ saved best → FusedSwinDice+Cross_tpi_clr_swin_best.pth
+Epoch 009/100 head_lr=9.11e-06 enc_lr=0.00e+00
+[009] train=2.431/0.999 │ val=1.906/1.000
+    IoU  [1.000, 0.630, 0.385]
+    F1   [1.000, 0.773, 0.556]
+    Rec  [1.000, 0.811, 0.396]
+    Prec [1.000, 0.739, 0.929]
+    AccC [1.000, 0.811, 0.396]
+✔ saved best → FusedSwinDice+Cross_tpi_clr_swin_best.pth
+Epoch 010/100 head_lr=1.01e-05 enc_lr=0.00e+00
+[010] train=2.243/0.999 │ val=1.720/1.000
+    IoU  [1.000, 0.754, 0.256]
+    F1   [1.000, 0.860, 0.408]
+    Rec  [1.000, 0.863, 0.259]
+    Prec [1.000, 0.857, 0.961]
+    AccC [1.000, 0.863, 0.259]
+✔ saved best → FusedSwinDice+Cross_tpi_clr_swin_best.pth
+Epoch 011/100 head_lr=1.11e-05 enc_lr=0.00e+00
+[011] train=2.067/0.999 │ val=1.564/1.000
+    IoU  [1.000, 0.872, 0.412]
+    F1   [1.000, 0.932, 0.584]
+    Rec  [1.000, 0.931, 0.493]
+    Prec [1.000, 0.933, 0.715]
+    AccC [1.000, 0.931, 0.493]
+✔ saved best → FusedSwinDice+Cross_tpi_clr_swin_best.pth
+Epoch 012/100 head_lr=1.21e-05 enc_lr=0.00e+00
+[012] train=1.882/0.999 │ val=1.472/1.000
+    IoU  [1.000, 0.913, 0.231]
+    F1   [1.000, 0.954, 0.375]
+    Rec  [1.000, 0.990, 0.235]
+    Prec [1.000, 0.922, 0.930]
+    AccC [1.000, 0.990, 0.235]
+✔ saved best → FusedSwinDice+Cross_tpi_clr_swin_best.pth
+Epoch 013/100 head_lr=1.31e-05 enc_lr=0.00e+00
+[013] train=1.825/0.999 │ val=1.418/1.000
+    IoU  [1.000, 0.913, 0.185]
+    F1   [1.000, 0.955, 0.313]
+    Rec  [1.000, 0.987, 0.198]
+    Prec [1.000, 0.924, 0.742]
+    AccC [1.000, 0.987, 0.198]
+✔ saved best → FusedSwinDice+Cross_tpi_clr_swin_best.pth
+Epoch 014/100 head_lr=1.41e-05 enc_lr=0.00e+00
+[014] train=1.745/0.999 │ val=1.294/1.000
+    IoU  [1.000, 0.918, 0.456]
+    F1   [1.000, 0.957, 0.627]
+    Rec  [1.000, 0.949, 0.665]
+    Prec [1.000, 0.966, 0.592]
+    AccC [1.000, 0.949, 0.665]
+✔ saved best → FusedSwinDice+Cross_tpi_clr_swin_best.pth
+Epoch 015/100 head_lr=1.50e-05 enc_lr=0.00e+00
+[015] train=1.676/0.999 │ val=1.286/1.000
+    IoU  [1.000, 0.912, 0.336]
+    F1   [1.000, 0.954, 0.503]
+    Rec  [1.000, 0.963, 0.447]
+    Prec [1.000, 0.945, 0.574]
+    AccC [1.000, 0.963, 0.447]
+✔ saved best → FusedSwinDice+Cross_tpi_clr_swin_best.pth
+Epoch 016/100 head_lr=1.60e-05 enc_lr=0.00e+00
+[016] train=1.597/0.999 │ val=1.316/1.000
+    IoU  [1.000, 0.911, 0.099]
+    F1   [1.000, 0.953, 0.180]
+    Rec  [1.000, 0.993, 0.103]
+    Prec [1.000, 0.917, 0.702]
+    AccC [1.000, 0.993, 0.103]
+Epoch 017/100 head_lr=1.70e-05 enc_lr=0.00e+00
+[017] train=1.575/0.999 │ val=1.188/1.000
+    IoU  [1.000, 0.928, 0.449]
+    F1   [1.000, 0.963, 0.620]
+    Rec  [1.000, 0.968, 0.582]
+    Prec [1.000, 0.958, 0.663]
+    AccC [1.000, 0.968, 0.582]
+✔ saved best → FusedSwinDice+Cross_tpi_clr_swin_best.pth
+Epoch 018/100 head_lr=1.80e-05 enc_lr=0.00e+00
+[018] train=1.456/0.999 │ val=1.212/1.000
+    IoU  [1.000, 0.905, 0.371]
+    F1   [1.000, 0.950, 0.541]
+    Rec  [1.000, 0.945, 0.568]
+    Prec [1.000, 0.956, 0.516]
+    AccC [1.000, 0.945, 0.568]
+Epoch 019/100 head_lr=1.90e-05 enc_lr=0.00e+00
+[019] train=1.476/0.999 │ val=1.213/1.000
+    IoU  [1.000, 0.920, 0.281]
+    F1   [1.000, 0.959, 0.439]
+    Rec  [1.000, 0.983, 0.325]
+    Prec [1.000, 0.935, 0.672]
+    AccC [1.000, 0.983, 0.325]
+Epoch 020/100 head_lr=2.00e-05 enc_lr=0.00e+00
+[020] train=1.421/1.000 │ val=1.138/1.000
+    IoU  [1.000, 0.939, 0.370]
+    F1   [1.000, 0.969, 0.541]
+    Rec  [1.000, 0.998, 0.374]
+    Prec [1.000, 0.941, 0.973]
+    AccC [1.000, 0.998, 0.374]
+✔ saved best → FusedSwinDice+Cross_tpi_clr_swin_best.pth
+→ unfroze backbones @epoch 21
+Epoch 021/100 head_lr=2.00e-05 enc_lr=1.19e-06
+[021] train=1.456/0.999 │ val=1.157/1.000
+    IoU  [1.000, 0.930, 0.268]
+    F1   [1.000, 0.964, 0.423]
+    Rec  [1.000, 0.998, 0.272]
+    Prec [1.000, 0.932, 0.946]
+    AccC [1.000, 0.998, 0.272]
+Epoch 022/100 head_lr=2.00e-05 enc_lr=2.18e-06
+[022] train=1.316/1.000 │ val=1.100/1.000
+    IoU  [1.000, 0.952, 0.557]
+    F1   [1.000, 0.976, 0.716]
+    Rec  [1.000, 0.990, 0.611]
+    Prec [1.000, 0.962, 0.863]
+    AccC [1.000, 0.990, 0.611]
+✔ saved best → FusedSwinDice+Cross_tpi_clr_swin_best.pth
+Epoch 023/100 head_lr=2.00e-05 enc_lr=3.17e-06
+[023] train=1.276/1.000 │ val=1.112/1.000
+    IoU  [1.000, 0.921, 0.535]
+    F1   [1.000, 0.959, 0.697]
+    Rec  [1.000, 0.930, 0.906]
+    Prec [1.000, 0.990, 0.566]
+    AccC [1.000, 0.930, 0.906]
+Epoch 024/100 head_lr=2.00e-05 enc_lr=4.16e-06
+[024] train=1.203/1.000 │ val=1.097/1.000
+    IoU  [1.000, 0.922, 0.451]
+    F1   [1.000, 0.959, 0.621]
+    Rec  [1.000, 0.954, 0.657]
+    Prec [1.000, 0.965, 0.589]
+    AccC [1.000, 0.954, 0.657]
+✔ saved best → FusedSwinDice+Cross_tpi_clr_swin_best.pth
+Epoch 025/100 head_lr=2.00e-05 enc_lr=5.15e-06
+[025] train=1.159/0.999 │ val=1.056/1.000
+    IoU  [1.000, 0.945, 0.595]
+    F1   [1.000, 0.972, 0.746]
+    Rec  [1.000, 0.962, 0.822]
+    Prec [1.000, 0.982, 0.683]
+    AccC [1.000, 0.962, 0.822]
+✔ saved best → FusedSwinDice+Cross_tpi_clr_swin_best.pth
+Epoch 026/100 head_lr=2.00e-05 enc_lr=6.14e-06
+[026] train=1.109/1.000 │ val=1.047/1.000
+    IoU  [1.000, 0.959, 0.708]
+    F1   [1.000, 0.979, 0.829]
+    Rec  [1.000, 0.959, 0.993]
+    Prec [1.000, 0.999, 0.712]
+    AccC [1.000, 0.959, 0.993]
+✔ saved best → FusedSwinDice+Cross_tpi_clr_swin_best.pth
+Epoch 027/100 head_lr=2.00e-05 enc_lr=7.13e-06
+[027] train=1.063/1.000 │ val=1.009/1.000
+    IoU  [1.000, 0.969, 0.761]
+    F1   [1.000, 0.984, 0.865]
+    Rec  [1.000, 0.969, 0.995]
+    Prec [1.000, 0.999, 0.764]
+    AccC [1.000, 0.969, 0.995]
+✔ saved best → FusedSwinDice+Cross_tpi_clr_swin_best.pth
+Epoch 028/100 head_lr=2.00e-05 enc_lr=8.12e-06
+[028] train=1.034/1.000 │ val=1.070/1.000
+    IoU  [1.000, 0.927, 0.581]
+    F1   [1.000, 0.962, 0.735]
+    Rec  [1.000, 0.927, 1.000]
+    Prec [1.000, 1.000, 0.581]
+    AccC [1.000, 0.927, 1.000]
+Epoch 029/100 head_lr=2.00e-05 enc_lr=9.11e-06
+[029] train=0.983/1.000 │ val=0.989/1.000
+    IoU  [1.000, 0.962, 0.723]
+    F1   [1.000, 0.981, 0.839]
+    Rec  [1.000, 0.963, 0.985]
+    Prec [1.000, 0.998, 0.731]
+    AccC [1.000, 0.963, 0.985]
+✔ saved best → FusedSwinDice+Cross_tpi_clr_swin_best.pth
+Epoch 030/100 head_lr=2.00e-05 enc_lr=1.01e-05
+[030] train=0.980/0.999 │ val=0.924/1.000
+    IoU  [1.000, 0.995, 0.947]
+    F1   [1.000, 0.997, 0.973]
+    Rec  [1.000, 1.000, 0.951]
+    Prec [1.000, 0.995, 0.996]
+    AccC [1.000, 1.000, 0.951]
+✔ saved best → FusedSwinDice+Cross_tpi_clr_swin_best.pth
+Epoch 031/100 head_lr=2.00e-05 enc_lr=1.11e-05
+[031] train=0.968/1.000 │ val=0.935/1.000
+    IoU  [1.000, 0.976, 0.758]
+    F1   [1.000, 0.988, 0.863]
+    Rec  [1.000, 0.999, 0.770]
+    Prec [1.000, 0.977, 0.981]
+    AccC [1.000, 0.999, 0.770]
+Epoch 032/100 head_lr=2.00e-05 enc_lr=1.21e-05
+[032] train=0.885/1.000 │ val=0.909/1.000
+    IoU  [1.000, 0.982, 0.838]
+    F1   [1.000, 0.991, 0.912]
+    Rec  [1.000, 0.986, 0.952]
+    Prec [1.000, 0.995, 0.875]
+    AccC [1.000, 0.986, 0.952]
+✔ saved best → FusedSwinDice+Cross_tpi_clr_swin_best.pth
+Epoch 033/100 head_lr=2.00e-05 enc_lr=1.31e-05
+[033] train=0.832/1.000 │ val=0.876/1.000
+    IoU  [1.000, 0.991, 0.909]
+    F1   [1.000, 0.995, 0.952]
+    Rec  [1.000, 0.999, 0.922]
+    Prec [1.000, 0.992, 0.984]
+    AccC [1.000, 0.999, 0.922]
+✔ saved best → FusedSwinDice+Cross_tpi_clr_swin_best.pth
+Epoch 034/100 head_lr=2.00e-05 enc_lr=1.41e-05
+[034] train=0.815/1.000 │ val=0.968/1.000
+    IoU  [1.000, 0.966, 0.653]
+    F1   [1.000, 0.983, 0.790]
+    Rec  [1.000, 1.000, 0.653]
+    Prec [1.000, 0.966, 1.000]
+    AccC [1.000, 1.000, 0.653]
+Epoch 035/100 head_lr=2.00e-05 enc_lr=1.50e-05
+[035] train=0.793/1.000 │ val=0.890/1.000
+    IoU  [1.000, 0.989, 0.896]
+    F1   [1.000, 0.995, 0.945]
+    Rec  [1.000, 0.996, 0.931]
+    Prec [1.000, 0.993, 0.959]
+    AccC [1.000, 0.996, 0.931]
+Epoch 036/100 head_lr=2.00e-05 enc_lr=1.60e-05
+[036] train=0.805/1.000 │ val=0.965/1.000
+    IoU  [1.000, 0.986, 0.858]
+    F1   [1.000, 0.993, 0.924]
+    Rec  [1.000, 1.000, 0.858]
+    Prec [1.000, 0.986, 1.000]
+    AccC [1.000, 1.000, 0.858]
+Epoch 037/100 head_lr=2.00e-05 enc_lr=1.70e-05
+[037] train=0.762/1.000 │ val=0.967/1.000
+    IoU  [1.000, 0.981, 0.809]
+    F1   [1.000, 0.990, 0.895]
+    Rec  [1.000, 1.000, 0.809]
+    Prec [1.000, 0.981, 1.000]
+    AccC [1.000, 1.000, 0.809]
+Epoch 038/100 head_lr=2.00e-05 enc_lr=1.80e-05
+[038] train=0.756/1.000 │ val=0.967/1.000
+    IoU  [1.000, 0.992, 0.926]
+    F1   [1.000, 0.996, 0.961]
+    Rec  [1.000, 0.996, 0.961]
+    Prec [1.000, 0.996, 0.961]
+    AccC [1.000, 0.996, 0.961]
+Epoch 039/100 head_lr=2.00e-05 enc_lr=1.90e-05
+[039] train=0.765/1.000 │ val=0.852/1.000
+    IoU  [1.000, 0.999, 0.987]
+    F1   [1.000, 0.999, 0.993]
+    Rec  [1.000, 0.999, 0.995]
+    Prec [1.000, 0.999, 0.992]
+    AccC [1.000, 0.999, 0.995]
+✔ saved best → FusedSwinDice+Cross_tpi_clr_swin_best.pth
+Epoch 040/100 head_lr=2.00e-05 enc_lr=2.00e-05
+[040] train=0.736/1.000 │ val=1.140/1.000
+    IoU  [1.000, 0.953, 0.512]
+    F1   [1.000, 0.976, 0.677]
+    Rec  [1.000, 1.000, 0.512]
+    Prec [1.000, 0.953, 1.000]
+    AccC [1.000, 1.000, 0.512]
+Epoch 041/100 head_lr=2.00e-05 enc_lr=2.00e-05
+[041] train=0.703/1.000 │ val=0.946/1.000
+    IoU  [1.000, 0.986, 0.868]
+    F1   [1.000, 0.993, 0.929]
+    Rec  [1.000, 0.994, 0.918]
+    Prec [1.000, 0.992, 0.941]
+    AccC [1.000, 0.994, 0.918]
+Epoch 042/100 head_lr=2.00e-05 enc_lr=2.00e-05
+[042] train=0.698/1.000 │ val=1.402/1.000
+    IoU  [1.000, 0.908, 0.000]
+    F1   [1.000, 0.952, 0.000]
+    Rec  [1.000, 1.000, 0.000]
+    Prec [1.000, 0.908, 0.000]
+    AccC [1.000, 1.000, 0.000]
+Epoch 043/100 head_lr=2.00e-05 enc_lr=2.00e-05
+[043] train=0.710/1.000 │ val=1.299/1.000
+    IoU  [1.000, 0.911, 0.031]
+    F1   [1.000, 0.953, 0.061]
+    Rec  [1.000, 1.000, 0.031]
+    Prec [1.000, 0.911, 1.000]
+    AccC [1.000, 1.000, 0.031]
+Epoch 044/100 head_lr=2.00e-05 enc_lr=2.00e-05
+[044] train=0.654/1.000 │ val=1.237/1.000
+    IoU  [1.000, 0.928, 0.229]
+    F1   [1.000, 0.963, 0.373]
+    Rec  [1.000, 1.000, 0.229]
+    Prec [1.000, 0.928, 1.000]
+    AccC [1.000, 1.000, 0.229]
+Epoch 045/100 head_lr=2.00e-05 enc_lr=2.00e-05
+[045] train=0.641/1.000 │ val=1.366/1.000
+    IoU  [1.000, 0.913, 0.050]
+    F1   [1.000, 0.954, 0.095]
+    Rec  [1.000, 1.000, 0.050]
+    Prec [1.000, 0.913, 1.000]
+    AccC [1.000, 1.000, 0.050]
+Epoch 046/100 head_lr=2.00e-05 enc_lr=2.00e-05
+[046] train=0.580/1.000 │ val=0.948/1.000
+    IoU  [1.000, 0.998, 0.983]
+    F1   [1.000, 0.999, 0.992]
+    Rec  [1.000, 1.000, 0.983]
+    Prec [1.000, 0.998, 1.000]
+    AccC [1.000, 1.000, 0.983]
+Epoch 047/100 head_lr=2.00e-05 enc_lr=2.00e-05
+[047] train=0.548/1.000 │ val=1.129/1.000
+    IoU  [1.000, 0.963, 0.620]
+    F1   [1.000, 0.981, 0.766]
+    Rec  [1.000, 1.000, 0.620]
+    Prec [1.000, 0.963, 1.000]
+    AccC [1.000, 1.000, 0.620]
+Epoch 048/100 head_lr=2.00e-05 enc_lr=2.00e-05
+[048] train=0.595/0.999 │ val=1.226/1.000
+    IoU  [1.000, 0.925, 0.197]
+    F1   [1.000, 0.961, 0.329]
+    Rec  [1.000, 1.000, 0.197]
+    Prec [1.000, 0.925, 1.000]
+    AccC [1.000, 1.000, 0.197]
+Epoch 049/100 head_lr=2.00e-05 enc_lr=2.00e-05
+[049] train=0.577/1.000 │ val=1.027/1.000
+    IoU  [1.000, 0.987, 0.871]
+    F1   [1.000, 0.994, 0.931]
+    Rec  [1.000, 1.000, 0.871]
+    Prec [1.000, 0.987, 1.000]
+    AccC [1.000, 1.000, 0.871]
+✘ early‑stop (no improve)
+
+Inference:
+  saved pred_0000.npy & pred_0000.las
+  saved pred_0001.npy & pred_0001.las
+  saved pred_0002.npy & pred_0002.las
+  saved pred_0003.npy & pred_0003.las
+  saved pred_0004.npy & pred_0004.las
+  saved pred_0005.npy & pred_0005.las
+  saved pred_0006.npy & pred_0006.las
+  saved pred_0007.npy & pred_0007.las
+  saved pred_0008.npy & pred_0008.las
+  saved pred_0009.npy & pred_0009.las
+  saved pred_0010.npy & pred_0010.las
+  saved pred_0011.npy & pred_0011.las
+  saved pred_0012.npy & pred_0012.las
+  saved pred_0013.npy & pred_0013.las
+  saved pred_0014.npy & pred_0014.las
+  saved pred_0015.npy & pred_0015.las
+  saved pred_0016.npy & pred_0016.las
+  saved pred_0017.npy & pred_0017.las
+  saved pred_0018.npy & pred_0018.las
+  saved pred_0019.npy & pred_0019.las
+  saved pred_0020.npy & pred_0020.las
+  saved pred_0021.npy & pred_0021.las
+  saved pred_0022.npy & pred_0022.las
+  saved pred_0023.npy & pred_0023.las
+  saved pred_0024.npy & pred_0024.las
+  saved pred_0025.npy & pred_0025.las
+  saved pred_0026.npy & pred_0026.las
+  saved pred_0027.npy & pred_0027.las
+  saved pred_0028.npy & pred_0028.las
+  saved pred_0029.npy & pred_0029.las
+  saved pred_0030.npy & pred_0030.las
+  saved pred_0031.npy & pred_0031.las
+  saved pred_0032.npy & pred_0032.las
+  saved pred_0033.npy & pred_0033.las
+  saved pred_0034.npy & pred_0034.las
+  saved pred_0035.npy & pred_0035.las
